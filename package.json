@@ -1,0 +1,29 @@
+{
+  "name": "tokyoaleworks",
+  "version": "1.0.0",
+  "description": "Official page of Tokyo Aleworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[tokyo",
+    "aleworks",
+    "craft",
+    "beer",
+    "beer",
+    "brewery",
+    "taproom]"
+  ],
+  "author": "willjw3",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^2.22.17",
+    "gatsby-plugin-sass": "^2.3.3",
+    "gatsby-source-filesystem": "^2.3.10",
+    "gatsby-transformer-remark": "^2.8.14",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
