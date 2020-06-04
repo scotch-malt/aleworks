@@ -1,10 +1,15 @@
 import React from "react";
+import Layout from "../components/layout";
+import "../styles/index.scss";
+import "typeface-rubik";
 
 const Index = () => {
     return (
-        <div className="index">
-            <h1>Welcome to Tokyo Aleworks</h1>
-        </div>
+        <Layout>
+            <div className="main">
+
+            </div>
+        </Layout>
     );
 }
 
