@@ -9,6 +9,9 @@
         justify-content: space-between;
         align-items: center;
         &-logo {
+            // &-desktop {
+            //     width: 150px;
+            // }
             &-mobile {
                 display: none;
             }
@@ -49,46 +52,42 @@
 @media only screen and (max-width: 1400px) {
     .header {
         &-contents {
-            &-logo {
-            
-            }
             &-links {
                 padding: 0 100px;
-            }
-            &-slogan {
-
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .header {
-        &-contents {
-            &-logo {
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
-                }
-            }
-            &-slogan {
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
+                &-link {
+                    font-size: 1.75rem;
                 }
             }
         }
     }
 }
+
 @media only screen and (max-width: 1300px) {
     .header {
         &-contents {
             &-links {
+                &-link {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 990px) {
+    .header {
+        &-contents {
+            &-logo {
+                &-desktop {
+                    width: 90px;
+                }
+            }
+            &-links {
                 display: none;
+            }
+            &-slogan {
+                &-desktop {
+                    width: 90px;
+                }
             }
 
         }
@@ -102,28 +101,16 @@
     .header {
         &-contents {
             padding: 10px 10px;
-            &-logo {
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
-                }
-            }
             &-links {
-                display: none;
                 &-link {
                    font-size: 1.5rem; 
                 }
             }
-            &-slogan {
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
-                }
-            }
         }
     }
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
