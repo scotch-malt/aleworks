@@ -48,9 +48,10 @@ img {
     min-height: 100vh;
     &-main {
         margin-top: 25vh;
-        padding: 0 7%;
+        padding: 0 5%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &-image {
             width: 600px;
             & img {
@@ -94,6 +95,11 @@ img {
 @media only screen and (max-width: 1400px) {
     .index {
         background-image: url("../images/brewery1bbl1400.jpg");
+        &-main {
+            &-image {
+                width: 500px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -104,7 +110,9 @@ img {
 @media only screen and (max-width: 1000px) {
     .index {
         background-image: url("../images/brewery1bbl1000.jpg");
-
+        &-image {
+            width: 400px;
+        }
     }
 }
 @media only screen and (max-width: 750px) {
