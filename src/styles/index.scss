@@ -1,6 +1,42 @@
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+      @content;
+    }
+    @-o-keyframes #{$animation-name} {
+      @content;
+    }  
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+  }
+  
+  @include keyframes(fade-in) {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 body {
     margin: 0;
     overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .index {
@@ -11,12 +47,41 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     &-main {
-        padding: 0 10%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        margin-top: 25vh;
+        padding: 0 7%;
+        display: flex;
+        justify-content: space-between;
+        &-image {
+            width: 600px;
+            & img {
+                @include animation('fade-in 10s');
+            }
+        }
+        &-card {
+            width: 50%;
+            & h1 {
+                color: white;
+                font-family: Rubik;
+                font-weight: 400;
+            }
+            &-links {
+                padding: 50px 0;
+                display: flex;
+                justify-content: space-around;
+                & button {
+                    padding: 20px;
+                    background: gold;
+                    border: transparent;
+                    border-radius: 2px;
+                    font-family: Rubik;
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
 }
+
+
 
 
 

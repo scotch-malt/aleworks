@@ -4,49 +4,44 @@
     z-index: 1;
     &-contents {
         background-color: #101d30;
-        padding: 5px 100px;
+        padding: 5px 300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         &-logo {
-            // &-desktop {
-            //     width: 150px;
+            // &-mobile {
+            //     display: none;
             // }
-            &-mobile {
-                display: none;
-            }
+            width: 178px;
         }
-        &-links {
-            text-align: center;
+        &-link {
+            font-family: "Rubik";
+            font-size: 2.5vw;
+            font-weight: 200;
             color: white;
-            list-style: none;
-            width: 100%;
-            padding: 0 150px;
-            display: flex;
-            justify-content: space-between;
-            &-link {
-                font-family: "Rubik";
-                font-size: 2rem;
-                font-weight: 200;
-                color: white;
-                text-decoration: none;
-                text-shadow: .5px .5px dodgerblue;
-                &:hover {
-                    color: lightgray;
-                }
+            text-decoration: none;
+            text-shadow: .5px .5px dodgerblue;
+            &:hover {
+                color: lightgray;
             }
         }
-        &-slogan {
-            &-mobile {
-                display: none;
-            }
-        }
+    // &-slogan {
+        //     &-mobile {
+        //         display: none;
+        //     }
+        // }
     }
-    &-mobilelinks {
-        display: none;
-        justify-content: space-evenly;
+    // &-mobilelinks {
+    //     display: none;
+    //     justify-content: space-evenly;
         
-    }
+    // }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 2px;
 }
 
 @media only screen and (max-width: 1400px) {

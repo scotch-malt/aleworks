@@ -6,15 +6,16 @@ const NewsFeed = ({news})=> {
     return (
         <div className="newsfeed">
             <div className="newsfeed-top">
-                <img width="100px" className="newsfeed-top-thumb" src={news.frontmatter.image} alt=""/>
+                <div className="newsfeed-top-thumb">
+                    <img src={news.frontmatter.image} alt=""/>
+                </div>
                 <div className="newsfeed-top-heading">
                     <h2>{news.frontmatter.title}</h2>
                     <small>{news.frontmatter.date}</small>
                 </div>
-                <hr/>
-                <div dangerouslySetInnerHTML={{__html: news.html}}/>
             </div>
-
+            <hr/>
+            <div className="newsfeed-bottom" dangerouslySetInnerHTML={{__html: news.html}}/>
         </div>
     );
 }

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import NewsFeed from "../components/newsfeed";
+import Slogan from "../images/TAW_logo.png"
 import "../styles/index.scss";
 import "typeface-rubik";
 
@@ -13,7 +14,17 @@ const Index = ({data}) => {
         <Layout>
             <div className="index">
                 <div className="index-main">
+                  <div className="index-main-image">
+                      <img src={Slogan} alt=""/>
+                  </div>
+                  <div className="index-main-card">
+                    <h1>THE LATEST NEWS</h1>
                     <NewsFeed news={news} />
+                    <div className="index-main-card-links">
+                      <button>BUY OUR BEER ONLINE</button>
+                      <button>DRINK AT OUR TAPROOMS</button>
+                    </div>
+                  </div>   
                 </div>
                 <Footer />
             </div> 

@@ -1,14 +1,44 @@
 .newsfeed {
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 25vh;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    //box-shadow: 1px 1px 10px white;
+    border-radius: 5px;
     &-top {
+        padding: 0 5px;
         display: flex;
-        
-        
+        justify-content: space-around;
+        align-items: center;
+        &-thumb {
+            width: 200px;
+            min-width: 80px;
+        }
+        &-heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Rubik;
+            text-align: center;
+            padding: 0 5px;
+            & h2 {
+                margin-bottom: 0;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+            & small {
+                font-style: italic;
+            }
+        }
+    }
+    &-bottom {
+        padding: 0 10px;
+        font-family: Rubik;
+        text-align: center;
     }
 }
 
 img {
     width: 100%;
     height: auto;
+    padding:1px;
+    border:1px solid #021a40;
 }
