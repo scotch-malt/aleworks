@@ -16,6 +16,12 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/images`
             }
+        },
+        {
+            resolve: `gatsby-plugin-nprogress`,
+            options: {
+                color: `tomato`
+            }
         }
         
     ]
