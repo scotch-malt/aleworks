@@ -21,8 +21,8 @@ const Index = ({data}) => {
                     <h1>THE LATEST NEWS</h1>
                     <NewsFeed news={news} />
                     <div className="index-main-card-links">
-                      <button>BUY OUR BEER ONLINE</button>
-                      <button>DRINK AT OUR TAPROOMS</button>
+                      <a href="https://www.saketry.com/tokyoaleworks.html" target="_blank" rel="noopener noreferrer"><button>BUY OUR BEER ONLINE</button></a>
+                      <a><button>DRINK AT OUR TAPROOMS</button></a>   
                     </div>
                   </div>   
                 </div>

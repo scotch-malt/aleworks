@@ -1,4 +1,6 @@
 import React from "react";
+import Img from "gatsby-image";
+//import si from "../images/smashing_imperialism_label.jpg";
 import "../styles/newsfeed.scss";
 
 const NewsFeed = ({news})=> {
