@@ -8,7 +8,7 @@ import "../styles/index.scss";
 import "typeface-rubik";
 
 const Index = ({data}) => {
-    let news = data.allMarkdownRemark.edges[0].node
+    let news = data.allMarkdownRemark.edges
     //console.log(news)
     return (
         <Layout>

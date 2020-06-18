@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "../images/logo200.png";
+import Logo from "../images/aleworks_logo_2018.png";
 import MobileLogo from "../images/aleworks90.png"
 import Slogan from "../images/slogan200.png";
 import MobileSlogan from "../images/slogan90.png";
@@ -11,7 +11,7 @@ const Header = () => {
         <div className="header">
             <div className="header-contents">
                 <div className="header-contents-logo">
-                    <img className="header-contents-logo-desktop" src={Logo} alt=""/>  
+                    <Link to="/"><img className="header-contents-logo-desktop" src={Logo} alt=""/> </Link>  
                 </div>
                 <Link className="header-contents-link" to="#">Beers</Link>
                 <Link className="header-contents-link" to="#">Brewery</Link>

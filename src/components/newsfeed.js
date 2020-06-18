@@ -1,23 +1,26 @@
 import React from "react";
-import Img from "gatsby-image";
-//import si from "../images/smashing_imperialism_label.jpg";
+import { Link, graphql } from "gatsby";
 import "../styles/newsfeed.scss";
 
 const NewsFeed = ({news})=> {
-    console.log(news.frontmatter.image)
+    console.log(news)
     return (
-        <div className="newsfeed">
-            <div className="newsfeed-top">
-                <div className="newsfeed-top-thumb">
-                    <img src={news.frontmatter.image} alt=""/>
-                </div>
-                <div className="newsfeed-top-heading">
-                    <h2>{news.frontmatter.title}</h2>
-                    <small>{news.frontmatter.date}</small>
-                </div>
-            </div>
-            <hr/>
-            <div className="newsfeed-bottom" dangerouslySetInnerHTML={{__html: news.html}}/>
+        <div>
+            {news.map((item, i) => {
+                return (
+                    <div key={i} className="newsfeed">
+                        <div className="newsfeed-top">
+                            <div className="newsfeed-top-thumb">
+                                <img src={item.node.frontmatter.image} alt=""/>
+                            </div>
+                            <div className="newsfeed-top-heading">
+                                <Link className="newsfeed-top-heading-link" to={item.node.fields.slug}><h2>{item.node.frontmatter.title}</h2></Link>
+                                <small>{item.node.frontmatter.date}</small>
+                            </div>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     );
 }
