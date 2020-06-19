@@ -48,8 +48,8 @@ img {
     justify-content: space-between;
     min-height: 100vh;
     &-main {
-        background-image: url("../images/brewery1bbl_strip.jpg");
-        background-repeat: no-repeat;
+        // background-image: url("../images/brewery1bbl_strip.jpg");
+        // background-repeat: no-repeat;
         margin-top: 25vh;
         padding: 0 5%;
         display: flex;
@@ -99,7 +99,7 @@ img {
 @media only screen and (max-width: 1400px) {
     .index {
         &-main {
-            background-image: url("../images/brewery1bbl1400_strip.jpg");
+            //background-image: url("../images/brewery1bbl1400_strip.jpg");
             &-image {
                 width: 500px;
             }
@@ -109,7 +109,7 @@ img {
 @media only screen and (max-width: 1300px) {
     .index {
         &-main {
-            background-image: url("../images/brewery1bbl1300_strip.jpg");
+            //background-image: url("../images/brewery1bbl1300_strip.jpg");
             padding: 0 2%;
             &-image {
                 width: 450px;
@@ -148,7 +148,7 @@ img {
 @media only screen and (max-width: 1000px) {
     .index {
         &-main {
-            background-image: url("../images/brewery1bbl1000_strip.jpg");
+            //background-image: url("../images/brewery1bbl1000_strip.jpg");
             //background-repeat: repeat;
             margin-top: 20vh;
             flex-direction: column;
@@ -165,7 +165,7 @@ img {
 @media only screen and (max-width: 750px) {
     .index {
         &-main {
-            background-image: url("../images/brewery1bbl750_strip.jpg");
+            //background-image: url("../images/brewery1bbl750_strip.jpg");
             &-card {
                 &-links {
                     flex-direction: column;
@@ -181,7 +181,7 @@ img {
 @media only screen and (max-width: 500px) {
     .index {
         &-main {
-            background-image: url("../images/brewery1bbl500_strip.jpg");
+            //background-image: url("../images/brewery1bbl500_strip.jpg");
             margin-top: 25vh;
             &-image {
                 width: 300px;
