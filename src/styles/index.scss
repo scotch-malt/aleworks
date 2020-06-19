@@ -179,6 +179,7 @@ img {
     .index {
         background-image: url("../images/brewery1bbl500.jpg");
         &-main {
+            margin-top: 25vh;
             &-image {
                 width: 300px;
             }
