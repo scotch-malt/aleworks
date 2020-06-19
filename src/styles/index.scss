@@ -40,8 +40,9 @@ img {
 }
 
 .index {
-    background-image: url("../images/brewery1bbl.jpg");
-    background-repeat: no-repeat;
+    // background-image: url("../images/brewery1bbl.jpg");
+    // background-repeat: no-repeat;
+    background: #101d30;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
