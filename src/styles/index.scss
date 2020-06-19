@@ -40,16 +40,16 @@ img {
 }
 
 .index {
-    background-image: url("../images/brewery1bbl.jpg");
-    background-repeat: no-repeat;
-    //background: #101d30;
+    // background-image: url("../images/brewery1bbl.jpg");
+    // background-repeat: no-repeat;
+    background: #101d30;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
     &-main {
-        // background-image: url("../images/brewery1bbl_strip.jpg");
-        // background-repeat: no-repeat;
+        background-image: url("../images/brewery1bbl_strip.jpg");
+        background-repeat: no-repeat;
         margin-top: 25vh;
         padding: 0 5%;
         display: flex;
@@ -98,8 +98,8 @@ img {
 
 @media only screen and (max-width: 1400px) {
     .index {
-        background-image: url("../images/brewery1bbl1400.jpg");
         &-main {
+            background-image: url("../images/brewery1bbl1400_strip.jpg");
             &-image {
                 width: 500px;
             }
@@ -108,8 +108,8 @@ img {
 }
 @media only screen and (max-width: 1300px) {
     .index {
-        background-image: url("../images/brewery1bbl1300.jpg");
         &-main {
+            background-image: url("../images/brewery1bbl1300_strip.jpg");
             padding: 0 2%;
             &-image {
                 width: 450px;
@@ -147,9 +147,9 @@ img {
 
 @media only screen and (max-width: 1000px) {
     .index {
-        background-image: url("../images/brewery1bbl1000.jpg");
-        background-repeat: repeat;
         &-main {
+            background-image: url("../images/brewery1bbl1000_strip.jpg");
+            //background-repeat: repeat;
             margin-top: 20vh;
             flex-direction: column;
             &-image {
@@ -164,8 +164,8 @@ img {
 }
 @media only screen and (max-width: 750px) {
     .index {
-        background-image: url("../images/brewery1bbl750.jpg");
         &-main {
+            background-image: url("../images/brewery1bbl750_strip.jpg");
             &-card {
                 &-links {
                     flex-direction: column;
@@ -180,8 +180,8 @@ img {
 }
 @media only screen and (max-width: 500px) {
     .index {
-        background-image: url("../images/brewery1bbl500.jpg");
         &-main {
+            background-image: url("../images/brewery1bbl500_strip.jpg");
             margin-top: 25vh;
             &-image {
                 width: 300px;
