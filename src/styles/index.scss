@@ -58,7 +58,7 @@ img {
         &-image {
             width: 600px;
             & img {
-                @include animation('fade-in 15s');
+                @include animation('fade-in 10s');
             }
         }
         &-card {
