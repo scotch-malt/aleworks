@@ -9,10 +9,7 @@
         justify-content: space-between;
         align-items: center;
         &-logo {
-            // &-mobile {
-            //     display: none;
-            // }
-            width: 178px;
+            width: 178px;   
         }
         &-link {
             font-family: "Rubik";
@@ -25,17 +22,7 @@
                 color: lightgray;
             }
         }
-    // &-slogan {
-        //     &-mobile {
-        //         display: none;
-        //     }
-        // }
     }
-    // &-mobilelinks {
-    //     display: none;
-    //     justify-content: space-evenly;
-        
-    // }
 }
 
 img {

@@ -44,7 +44,7 @@ query indexQuery {
   file(relativePath: { eq: "TAW_logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
