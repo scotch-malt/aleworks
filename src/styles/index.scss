@@ -58,10 +58,7 @@ img {
         justify-content: space-between;
         align-items: center;
         &-image {
-            width: 600px;
-            & img {
-                @include animation('fade-in 10s');
-            }
+           width: 600px;
         }
         &-card {
             width: 50%;
@@ -152,10 +149,11 @@ img {
         &-main {
             //background-image: url("../images/brewery1bbl1000_strip.jpg");
             //background-repeat: repeat;
-            margin-top: 20vh;
+            margin-top: 25vh;
             flex-direction: column;
             &-image {
                 width: 400px;
+                margin-bottom: 30px;
             }
             &-card {
                 width: 70%;

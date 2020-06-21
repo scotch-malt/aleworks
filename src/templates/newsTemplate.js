@@ -1,19 +1,27 @@
 import React from "react";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import Img from "gatsby-image";
 import "../styles/news.scss";
 
 const News = ({data}) => {
     const news = data.markdownRemark;
-    console.log(news)
+    console.log(data)
     return (
         <Layout>
             <div className="news">
                 <div className="news-main">
                     <div className="news-main-body">
-                        <div className="news-main-body-image">
+                        {/* <div className="news-main-body-image">
                             <img src={news.frontmatter.image} alt=""/>
+                        </div> */}
+                        <div className="news-main-body-image">
+                            <Img
+                                style={{width: "400px", margin: "10px 0"}} 
+                                fluid={data.file.childImageSharp.fluid}
+                            />
                         </div>
+                       
                         <div className="news-main-body-text">
                             <h1>{news.frontmatter.title}</h1>
                             <small>{news.frontmatter.date}</small>
@@ -35,7 +43,15 @@ const News = ({data}) => {
 export default News;
 
 export const pageQuery = graphql`
-query newsQuery($slug: String!) {
+query newsQuery($slug: String!, $image: String!) {
+    file(relativePath: { eq: $image }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid(maxWidth: 600, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
         html 
         frontmatter {

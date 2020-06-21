@@ -10,18 +10,18 @@ import "typeface-rubik";
 
 const Index = ({data}) => {
     let news = data.allMarkdownRemark.edges
-    console.log(data)
+    //console.log(data)
     return (
         <Layout>
             <div className="index">
                 <div className="index-main">
-                  {/* <div className="index-main-image">
-                      <img src={Slogan} alt=""/>
-                  </div> */}
-                  <Img style={{width: "600px"}}
-                    fluid={data.file.childImageSharp.fluid}
-                    alt="A corgi smiling happily"
-                  />
+                  <div className="index-main-image">
+                    <Img 
+                      style={{width: "100%"}}
+                      fluid={data.file.childImageSharp.fluid}
+                      alt="Craft revolution not just evolution"
+                    />
+                  </div>
                   <div className="index-main-card">
                     <h1>THE LATEST NEWS</h1>
                     <NewsFeed news={news} />

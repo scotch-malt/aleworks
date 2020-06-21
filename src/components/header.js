@@ -1,10 +1,6 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import Logo from "../images/aleworks_logo_2018.png";
-import MobileLogo from "../images/aleworks90.png"
-import Slogan from "../images/slogan200.png";
-import MobileSlogan from "../images/slogan90.png";
 import "../styles/header.scss";
 
 const Header = () => {
@@ -24,10 +20,11 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-contents">
-                {/* <div className="header-contents-logo">
-                    <Link to="/"><img className="header-contents-logo-desktop" src={Logo} alt=""/> </Link>  
-                </div> */}
-                <Img style={{width: "178px", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
+                <Link to="/"> 
+                  <div className="header-contents-logo">
+                    <Img style={{width: "100%", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
+                  </div>
+                </Link>
                 <Link className="header-contents-link" to="#">Beers</Link>
                 <Link className="header-contents-link" to="#">Brewery</Link>
                 <Link className="header-contents-link" to="#">Taprooms</Link>  
