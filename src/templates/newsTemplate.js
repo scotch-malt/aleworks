@@ -12,12 +12,9 @@ const News = ({data}) => {
             <div className="news">
                 <div className="news-main">
                     <div className="news-main-body">
-                        {/* <div className="news-main-body-image">
-                            <img src={news.frontmatter.image} alt=""/>
-                        </div> */}
                         <div className="news-main-body-image">
                             <Img
-                                style={{width: "400px", margin: "10px 0"}} 
+                                style={{width: "100%"}} 
                                 fluid={data.file.childImageSharp.fluid}
                             />
                         </div>

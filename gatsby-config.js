@@ -1,7 +1,6 @@
 module.exports = {
     plugins: [
         `gatsby-plugin-sass`,
-        `gatsby-transformer-yaml`, 
         {
             resolve: `gatsby-source-filesystem`,
             options: {

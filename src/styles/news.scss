@@ -10,7 +10,7 @@
             width: 60%;
             margin: auto;
             &-image {
-                width: 400px;
+                width: 35%;
                 float: left;
                 margin: 0 20px;
             }
@@ -42,4 +42,49 @@
 img {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+    .news {
+        &-main {
+            &-body {
+                width: 70%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .news {
+        &-main {
+            &-body {
+                width: 75%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    .news {
+        &-main {
+            &-body {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                &-image {
+                    margin: auto;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .news {
+        &-main {
+            &-body {
+                &-image {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
