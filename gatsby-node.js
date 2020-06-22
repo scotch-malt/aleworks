@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsTemplate = path.resolve(`./src/templates/newsTemplate.js`);
-    const productTemplate = path.resolve(`./src/templates/productTemplate.js`);
+    const beerTemplate = path.resolve(`./src/templates/beerTemplate.js`);
     const result = await graphql(`
       query {
         allMarkdownRemark {
@@ -51,7 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
       } else {
         createPage({
           path: node.fields.slug,
-          component: productTemplate,
+          component: beerTemplate,
           context: {
             slug: node.fields.slug,
             image: node.frontmatter.image
