@@ -25,7 +25,7 @@ const Header = () => {
                     <Img style={{width: "100%", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
                   </div>
                 </Link>
-                <Link className="header-contents-link" to="#">Beers</Link>
+                <Link className="header-contents-link" to="/beers">Beers</Link>
                 <Link className="header-contents-link" to="#">Brewery</Link>
                 <Link className="header-contents-link" to="#">Taprooms</Link>  
             </div>

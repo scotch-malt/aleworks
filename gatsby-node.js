@@ -18,6 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsTemplate = path.resolve(`./src/templates/newsTemplate.js`);
+    const productTemplate = path.resolve(`./src/templates/productTemplate.js`);
     const result = await graphql(`
       query {
         allMarkdownRemark {
@@ -29,6 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 tags
                 image
+                pagetype
               }
             }
           }
@@ -37,6 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `)
   
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (node.frontmatter.pagetype === "news") {
         createPage({
           path: node.fields.slug,
           component: newsTemplate,
@@ -45,6 +48,17 @@ exports.createPages = async ({ graphql, actions }) => {
             image: node.frontmatter.image
           }
         });
+      } else {
+        createPage({
+          path: node.fields.slug,
+          component: productTemplate,
+          context: {
+            slug: node.fields.slug,
+            image: node.frontmatter.image
+          }
+        });
+      }
+        
         
     })
 

@@ -25,11 +25,7 @@ const News = ({data}) => {
                             <hr/>
                             <div className="news-main-body-text-content" dangerouslySetInnerHTML={{__html: news.html}}/>
                         </div>
-                        
-                    </div>
-                    
-                    
-                    
+                    </div>   
                 </div>
                 <Footer />
             </div>
