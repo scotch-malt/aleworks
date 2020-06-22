@@ -9,8 +9,13 @@ import "../styles/index.scss";
 import "typeface-rubik";
 
 const Index = ({data}) => {
-    let news = data.allMarkdownRemark.edges
-    //console.log(data)
+    let news = [];
+    data.allMarkdownRemark.edges.forEach((edge, i) => {
+      if(edge.node.frontmatter.pagetype === "news" && news.length < 3) {
+        news.push(edge)
+      }
+    })
+    
     return (
         <Layout>
             <div className="index">
@@ -49,7 +54,7 @@ query indexQuery {
         }
       }
     }
-  allMarkdownRemark(limit: 3 sort: { fields: [frontmatter___date], order: DESC}) {
+  allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC}) {
     totalCount
     edges {
       node {
@@ -60,6 +65,7 @@ query indexQuery {
           date 
           tags
           image
+          pagetype
         }
         fields {
           slug
