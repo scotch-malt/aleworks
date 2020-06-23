@@ -33,7 +33,7 @@ const Beers = ({data}) => {
                     <h1 className="beers-main-title">Our Beers</h1>
                     <div className="beers-main-body">
                       {beers.map((beer, i) => {
-                          return <BeerCard key={i} beer={beer} image={images[i]} />
+                          return <BeerCard key={i} beer={beer} images={images} />
                       })}  
                     </div>
                  </div>

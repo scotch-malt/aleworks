@@ -1,11 +1,25 @@
 .beercard {
+    width: 280px;
+    margin-bottom: 60px;
     &-image {
         width: 280px;
+        margin: auto;
     }
-    &-title {
+    &-heading {
+        margin: auto;
+        text-align: center;
+        font-family: Rubik;
+        &-title {
+            color: white;
+            font-weight: 200;
+        }
+        &-jtitle {
+            color: lightgray;
+            font-weight: 200;
+        }
+    }
+    &-description {
         color: white;
-    }
-    &-jtitle {
-        color: lightgray;
+        font-family: Rubik;
     }
 }
