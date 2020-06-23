@@ -26,7 +26,7 @@ const Header = () => {
                   </div>
                 </Link>
                 <Link className="header-contents-link" to="/beers">Beers</Link>
-                <Link className="header-contents-link" to="#">Brewery</Link>
+                <Link className="header-contents-link" to="/brewery">Brewery</Link>
                 <Link className="header-contents-link" to="#">Taprooms</Link>  
             </div>
 
