@@ -3,7 +3,7 @@ title: "Yoyogi Lazy Hazy IPA"
 jtitle: 代々木・レイジー・ヘイジーIPA
 date: "2020-04-02"
 tags: ["beer", "ipa", "neipa", "hazy"]
-image: yoyogi_lazy_hazy_ipa_label.jpg
+image: yoyogi_lazy_hazy_label.jpg
 style: "NEIPA (New England IPA)"
 pagetype: "beer"
 ---
