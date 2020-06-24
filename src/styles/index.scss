@@ -40,8 +40,6 @@ img {
 }
 
 .index {
-    // background-image: url("../images/brewery1bbl.jpg");
-    // background-repeat: no-repeat;
     background: #101d30;
     background-image: url("../images/brewery1bbl_strip.jpg");
     background-repeat: no-repeat;
@@ -50,8 +48,6 @@ img {
     justify-content: space-between;
     min-height: 100vh;
     &-main {
-        // background-image: url("../images/brewery1bbl_strip.jpg");
-        // background-repeat: no-repeat;
         margin-top: 25vh;
         padding: 0 5%;
         display: flex;
