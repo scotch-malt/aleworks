@@ -31,7 +31,7 @@ const NewsFeed = ({news})=> {
   data.allFile.edges.forEach(edge => {
     news.forEach(item => {
         if (item.node.frontmatter.image === edge.node.base) {
-            images.push(<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.base.split(".")[0]} style={{overflow: "visible"}} />)
+            images.push(<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.base.split(".")[0]} style={{border: "1px solid white"}} />)
         }
     });
   })

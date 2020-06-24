@@ -1,8 +1,7 @@
 .newsfeed {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(16, 29, 48, .5);
     padding: 10px 0;
-    //box-shadow: 1px 1px 10px white;
-    border-radius: 10px;
+    //border: 1px solid white;
     &-top {
         padding: 0 5px;
         display: flex;
@@ -20,7 +19,7 @@
             text-align: left;
             padding: 0 40px;
             &-link {
-                color: #101d30;
+                color: white;
                 &:hover {
                     color: slategray;
                 }
@@ -37,11 +36,6 @@
         }
     }
     margin-bottom: 10px;
-    // &-bottom {
-    //     padding: 0 10px;
-    //     font-family: Rubik;
-    //     text-align: center;
-    // }
 }
 
 img {
@@ -51,10 +45,33 @@ img {
     border:1px solid #021a40;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
     .newsfeed {
         &-top {
-            flex-direction: column;
+            &-heading {
+                &-link {
+                    & h2 {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 650px) {
+    .newsfeed {
+        &-top {
+            &-heading {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .newsfeed {
+        &-top {
+            //flex-direction: column;
             &-heading {
                 &-link {
                     & h2 {
