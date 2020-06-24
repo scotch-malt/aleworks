@@ -23,8 +23,9 @@ const Brewery = () => {
                             <p>真のクラフトマンシップの変革を起こし</p>
                             <p>人と人をつなぐブリューイングの架け橋になる</p>
                             <p>それがTOKYO ALEWORKSが目指す「コミューナルブリューイング」です。</p>
-                            <hr/>
                         </div>
+                        <br/>
+                        <br/>
                         <div className="brewery-main-body-description">
                             <h3 className="brewery-main-body-description-heading">東京の板橋から、ブリューイングで世界の懸け橋に</h3>
                             <h2 className="brewery-main-body-description-heading">From Itabashi To The World</h2>

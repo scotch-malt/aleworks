@@ -17,9 +17,10 @@
             font-weight: 200;
             color: white;
             text-decoration: none;
-            text-shadow: .5px .5px dodgerblue;
+            text-shadow: 1px 1px dodgerblue;
+            border-bottom: 1px solid transparent;
             &:hover {
-                color: lightgray;
+                border-bottom: 1px solid dodgerblue;
             }
         }
     }
