@@ -12,6 +12,7 @@
             width: 178px;   
         }
         &-title {
+            text-align: center;
             color: white;
             font-family: Rubik;
             font-weight: 200;
@@ -35,4 +36,97 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 1400px) {
+    .taproomheader {
+        &-contents {
+            padding: 5px 200px;
+            &-links {
+                &-link {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .taproomheader {
+        &-contents {
+            padding: 5px 150px;
+            &-title {
+                font-size: 4vw;
+            }
+            &-links {
+                &-link {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .taproomheader {
+        &-contents {
+            padding: 5px 100px;
+            &-logo {
+                width: 150px;
+            }
+            &-title {
+                font-size: 5vw;
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .taproomheader {
+        &-contents {
+            padding: 10px 50px;
+            &-logo {
+                width: 120px;  
+            }
+            &-title {
+                font-size: 6vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .taproomheader {
+        &-contents {
+            padding: 10px 25px;
+            &-links {
+                &-link {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .taproomheader {
+        &-contents {
+            padding: 10px 15px;
+            &-logo {
+                width: 100px;
+            }
+            &-title {
+                font-size: 5.25vw;
+            }
+            &-links {
+                &-link {
+                    font-size: .8rem;
+                } 
+            }
+           
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

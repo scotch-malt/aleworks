@@ -50,10 +50,8 @@ img {
     .header {
         &-contents {
             padding: 5px 150px;
-            &-links {
-                &-link {
-                    font-size: 1.5rem;
-                }
+            &-link {
+                font-size: 1.5rem;
             }
         }
     }
