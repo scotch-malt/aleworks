@@ -46,6 +46,22 @@
 
 @media only screen and (max-width: 1000px) {
     .brewery {
-        background-image: url("../images/brewery_7bbl_dark_strip1000.jpg")
+        background-image: url("../images/brewery_7bbl_dark_strip1000.jpg");
+        &-main {
+            &-body {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .brewery {
+        background-image: url("../images/brewery_7bbl_dark_strip1000.jpg");
+        &-main {
+            &-body {
+                width: 80%;
+            }
+        }
     }
 }
