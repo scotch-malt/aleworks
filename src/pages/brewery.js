@@ -8,7 +8,7 @@ const Brewery = () => {
         <Layout>
             <div className="brewery">
                 <div className="brewery-main">
-                    <h1 className="brewery-main-title">Our Brewery</h1>
+                    <h1 className="brewery-main-title">OUR BREWERY</h1>
                     <div className="brewery-main-body">
                         <div className="brewery-main-body-description">
                             <h2 className="brewery-main-body-description-heading">Craft Revolution, Not Just Evolution</h2>

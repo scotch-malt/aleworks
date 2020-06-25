@@ -30,7 +30,7 @@ const Beers = ({data}) => {
         <Layout>
             <div className="beers">
                 <div className="beers-main">
-                    <h1 className="beers-main-title">Our Beers</h1>
+                    <h1 className="beers-main-title">OUR BEERS</h1>
                     <div className="beers-main-body">
                       {beers.map((beer, i) => {
                           return <BeerCard key={i} beer={beer} images={images} />
