@@ -57,6 +57,11 @@
                         display: flex;
                         justify-content: space-evenly;
                         align-items: center;
+                        &:hover {
+                            background: none;
+                            border: 1px solid gold;
+                            color: rgb(250, 215, 60);
+                        }
                     }
                 }
             }
