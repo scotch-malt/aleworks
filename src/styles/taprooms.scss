@@ -3,6 +3,7 @@
     background-image: url("../images/itabashi_taproom_collage.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,7 +24,6 @@
             display: flex;
             justify-content: space-between;
             &-card {
-                //border: .5px solid rgba(255,215,0, .6);
                 border: .5px solid rgba(255,255,255, .4);
                 border-radius: 5px;
                 padding: 15px;

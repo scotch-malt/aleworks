@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-import "../styles/header.scss";
+import "../styles/taproomheader.scss";
 
-const Header = () => {
+const TaproomHeader = () => {
     const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "aleworks_logo_2018.png" }) {
@@ -25,12 +25,15 @@ const Header = () => {
                     <Img style={{width: "100%", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
                   </div>
                 </Link>
-                <Link className="header-contents-link" to="/beers">Beers</Link>
-                <Link className="header-contents-link" to="/brewery">Brewery</Link>
-                <Link className="header-contents-link" to="/taprooms">Taprooms</Link>  
+                <h1 className="header-contents-title">Itabashi Taproom</h1>
+                <div className="header-contents-links">
+                    <Link className="header-contents-links-link" to="/brewery">Shop Info</Link>
+                    <Link className="header-contents-links-link" to="/beers">Taplist</Link>
+                </div>
             </div>
-        </div>
+
+        </div>  
     );
 }
 
-export default Header;
+export default TaproomHeader;

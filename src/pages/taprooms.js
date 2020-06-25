@@ -1,5 +1,5 @@
 import React from "react";
-import {graphql} from "gatsby";
+import { Link, graphql } from "gatsby";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faPhoneSquare, faInfoCircle, faCompass } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout";
@@ -23,10 +23,9 @@ const Taprooms = ({data}) => {
                                     alt="Itabashi Taproom"
                                 />
                             </div>
-                            
                             <h2 className="taprooms-main-body-card-title">ITABASHI TAPROOM (板橋店)</h2>
                             <div className="taprooms-main-body-card-links">
-                                <a href="#"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></a>
+                                <Link to="/itabashi-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
                                 <a href=""><button><FontAwesomeIcon icon={faPhoneSquare} size="2x" /><span>03-3961-1196</span></button></a>
                                 <a href="https://goo.gl/maps/4Uzo1R5V1f1MNndD9" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
                             </div>
