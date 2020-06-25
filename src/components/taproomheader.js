@@ -18,17 +18,17 @@ const TaproomHeader = () => {
     }
   `)
     return (
-        <div className="header">
-            <div className="header-contents">
+        <div className="taproomheader">
+            <div className="taproomheader-contents">
                 <Link to="/"> 
-                  <div className="header-contents-logo">
+                  <div className="taproomheader-contents-logo">
                     <Img style={{width: "100%", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
                   </div>
                 </Link>
-                <h1 className="header-contents-title">Itabashi Taproom</h1>
-                <div className="header-contents-links">
-                    <Link className="header-contents-links-link" to="/brewery">Shop Info</Link>
-                    <Link className="header-contents-links-link" to="/beers">Taplist</Link>
+                <h1 className="taproomheader-contents-title">Itabashi Taproom</h1>
+                <div className="taproomheader-contents-links">
+                    <Link className="taproomheader-contents-links-link" to="/brewery">Shop Info</Link>
+                    <Link className="taproomheader-contents-links-link" to="/beers">Taplist</Link>
                 </div>
             </div>
 
