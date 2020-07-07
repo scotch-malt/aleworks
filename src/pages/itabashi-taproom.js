@@ -26,23 +26,16 @@ const ItabashiTaproom = ({data}) => {
            <div className="itabashi-taproom">
                <div className="itabashi-taproom-main">
                     <div className="itabashi-taproom-main-body">
-                        <div className="itabashi-taproom-main-body-news">
-                            <NewsFeed news={news} /> 
+                        <div className="itabashi-taproom-main-body-info">
+                            <InfoCard info={info} />  
                         </div>
                         <div className="itabashi-taproom-main-body-social">
-                            <NewsFeed news={news} />
+                            <InfoCard info={info} />
                         </div>
                     </div>
-                    <div className="itabashi-taproom-main-body">
-                        <div className="itabashi-taproom-main-body-news">
-                            <NewsFeed news={news} /> 
-                        </div>
-                        <div className="itabashi-taproom-main-body-social">
-                            <NewsFeed news={news} />
-                        </div>
-                    </div>
-                    <div className="itabashi-taproom-main-info">
-                      <InfoCard id="shop" info={info} />
+                    <div className="itabashi-taproom-main-news">
+    
+                      
                     </div>
                </div>
                <Footer />

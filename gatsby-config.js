@@ -36,6 +36,11 @@ module.exports = {
               plugins: [`gatsby-remark-responsive-iframe`],
             },
         },
-        `gatsby-plugin-anchor-links`       
+        {
+            resolve: "gatsby-plugin-anchor-links",
+            options: {
+              offset: -200
+            }
+          }       
     ]
 }
