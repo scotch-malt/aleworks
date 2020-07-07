@@ -1,5 +1,7 @@
 module.exports = {
     plugins: [
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -21,9 +23,6 @@ module.exports = {
                 path: `${__dirname}/src/images/`
             }
         },
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
-        `gatsby-transformer-remark`
-        
+        `gatsby-transformer-remark`,       
     ]
 }

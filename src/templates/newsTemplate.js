@@ -6,7 +6,7 @@ import "../styles/news.scss";
 
 const News = ({data}) => {
     const news = data.markdownRemark;
-    console.log(data)
+    
     return (
         <Layout>
             <div className="news">
@@ -15,7 +15,7 @@ const News = ({data}) => {
                         <div className="news-main-body-image">
                             <Img
                                 style={{width: "100%"}} 
-                                fluid={data.file.childImageSharp.fluid}
+                                fluid={news.frontmatter.image.childImageSharp.fluid}
                             />
                         </div>
                        
@@ -36,22 +36,21 @@ const News = ({data}) => {
 export default News;
 
 export const pageQuery = graphql`
-query newsQuery($slug: String!, $image: String!) {
-    file(relativePath: { eq: $image }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        fluid(maxWidth: 600, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
+query newsQuery($slug: String!) {
+
     markdownRemark(fields: { slug: { eq: $slug } }) {
         html 
         frontmatter {
             title 
             date(formatString: "MMMM DD, YYYY") 
             tags
-            image 
+            image {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
         }
     }
 }

@@ -3,7 +3,7 @@ title: "Flagon Filler ESB"
 jtitle: フラゴン・フィラー・ESB
 date: "2020-01-03"
 tags: ["beer", "esb"]
-image: flagon_filler.jpg
+image: ../src/images/flagon_filler.jpg
 style: "ESB (Extra Special Bitter)"
 pagetype: "beer"
 ---

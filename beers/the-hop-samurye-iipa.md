@@ -3,7 +3,7 @@ title: "The Hop Samurye IIPA"
 jtitle: ザ・ホップさむライIIPA
 date: "2020-02-01"
 tags: ["beer", "ipa", "imperial", "rye"]
-image: the_hop_samurye_label.jpg
+image: ../src/images/the_hop_samurye_label.jpg
 style: "American Rye Imperial IPA"
 pagetype: "beer"
 ---

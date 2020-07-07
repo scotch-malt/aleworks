@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import NewsFeed from "../components/newsfeed";
-import Slogan from "../images/TAW_logo.png"
 import Img from "gatsby-image";
 import "../styles/index.scss";
 import "typeface-rubik";
@@ -64,7 +63,14 @@ query indexQuery {
           title 
           date 
           tags
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+  
           pagetype
         }
         fields {

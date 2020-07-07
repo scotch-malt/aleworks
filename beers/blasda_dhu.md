@@ -3,7 +3,7 @@ title: "Blasda Dhu Dry Stout"
 jtitle: ブラスダ・デュー
 date: "2019-12-31"
 tags: ["beer", "stout", "dry"]
-image: blasda_dhu.jpg
+image: ../src/images/blasda_dhu.jpg
 style: "Dry Stout"
 pagetype: "beer"
 ---

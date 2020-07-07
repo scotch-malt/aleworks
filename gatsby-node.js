@@ -29,7 +29,6 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 tags
-                image
                 pagetype
               }
             }
@@ -44,8 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
           path: node.fields.slug,
           component: newsTemplate,
           context: {
-            slug: node.fields.slug,
-            image: node.frontmatter.image
+            slug: node.fields.slug
           }
         });
       } else {
@@ -53,8 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
           path: node.fields.slug,
           component: beerTemplate,
           context: {
-            slug: node.fields.slug,
-            image: node.frontmatter.image
+            slug: node.fields.slug
           }
         });
       }
