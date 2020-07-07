@@ -8,7 +8,7 @@ import Img from "gatsby-image";
 import "../styles/taprooms.scss";
 
 const Taprooms = ({data}) => {
-    console.log(data)
+    
     return (
         <Layout>
             <div className="taprooms">

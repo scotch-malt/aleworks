@@ -1,0 +1,12 @@
+.infocard {
+    text-align: center;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    background: rgba(16, 29, 48, .7);
+    &-title {
+        font-family: Rubik;
+        font-weight: 200;
+    }
+}

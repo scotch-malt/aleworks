@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import NewsFeed from "../components/newsfeed";
@@ -31,7 +31,7 @@ const Index = ({data}) => {
                     <NewsFeed news={news} />
                     <div className="index-main-card-links">
                       <a href="https://www.saketry.com/tokyoaleworks.html" target="_blank" rel="noopener noreferrer"><button>BUY OUR BEER ONLINE</button></a>
-                      <a><button>DRINK AT OUR TAPROOMS</button></a>   
+                      <Link to="/taprooms"><button>DRINK AT OUR TAPROOMS</button></Link>   
                     </div>
                   </div>   
                 </div>

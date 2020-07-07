@@ -20,9 +20,22 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `itabashi_info`,
+                path: `${__dirname}/info/itabashi`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/src/images/`
             }
         },
-        `gatsby-transformer-remark`,       
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [`gatsby-remark-responsive-iframe`],
+            },
+        },
+        `gatsby-plugin-anchor-links`       
     ]
 }
