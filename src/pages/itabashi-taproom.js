@@ -52,7 +52,13 @@ query itabashiTaproomQuery {
           title 
           date 
           tags
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           pagetype
         }
         fields {

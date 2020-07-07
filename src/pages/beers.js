@@ -7,7 +7,6 @@ import Img from "gatsby-image";
 import "../styles/beers.scss";
 
 const Beers = ({data}) => {
-    console.log(data)
 
     let beers = [];
     data.allMarkdownRemark.edges.forEach((edge, i) => {
@@ -15,16 +14,6 @@ const Beers = ({data}) => {
         beers.push(edge)
       }
     })
-
-    let images = [];
-    data.allFile.edges.forEach(edge => {
-        beers.forEach(item => {
-            if (item.node.frontmatter.image === edge.node.base) {
-                images.push(<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.base.split(".")[0]} style={{overflow: "visible", width: "100%"}} />)
-            }
-        });
-    })
-    
     
     return (
         <Layout>
@@ -33,7 +22,7 @@ const Beers = ({data}) => {
                     <h1 className="beers-main-title">OUR BEERS</h1>
                     <div className="beers-main-body">
                       {beers.map((beer, i) => {
-                          return <BeerCard key={i} beer={beer} images={images} />
+                          return <BeerCard key={i} beer={beer} />
                       })}  
                     </div>
                  </div>
@@ -47,23 +36,6 @@ export default Beers;
 
 export const pageQuery = graphql`
 query beerQuery {
-    allFile(
-        filter: {
-          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          
-        }
-      ) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-    }
   allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC}) {
     totalCount
     edges {
@@ -75,7 +47,13 @@ query beerQuery {
           jtitle 
           date 
           tags
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           pagetype
         }
         fields {

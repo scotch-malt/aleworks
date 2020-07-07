@@ -3,7 +3,7 @@ title: "Center Gai-IPA"
 jtitle: センター街PA
 date: "2020-03-01"
 tags: ["beer", "ipa", "west coast"]
-image: center_gai_ipa.jpg
+image: ../src/images/center_gai_ipa.jpg
 style: "American West Coast IPA"
 pagetype: "beer"
 ---

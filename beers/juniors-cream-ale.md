@@ -3,7 +3,7 @@ title: "Junior's Cream Ale"
 jtitle: ジュニアーズ・クリーム・エール
 date: "2020-01-01"
 tags: ["beer", "cream ale", "american"]
-image: juniors_cream_ale.jpg
+image: ../src/images/juniors_cream_ale.jpg
 style: "Cream Ale"
 pagetype: "beer"
 ---

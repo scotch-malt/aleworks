@@ -3,7 +3,7 @@ title: "Roppongi Hazy Nights DDH IIPA"
 jtitle: 六本木・ヘイジー・ナイツ ダブルドライホップ・インペリアルIPA
 date: "2020-01-02"
 tags: ["beer", "double ipa", "imperial ipa", "neipa", "hazy"]
-image: roppongi_hazy_nights_label.jpg
+image: ../src/images/roppongi_hazy_nights_label.jpg
 style: "NEIIPA (New England Imperial IPA)"
 pagetype: "beer"
 ---

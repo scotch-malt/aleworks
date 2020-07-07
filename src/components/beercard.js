@@ -1,22 +1,13 @@
 import React from "react";
+import Img from "gatsby-image";
 import "../styles/beercard.scss";
 
-const BeerCard = ({beer, images}) => {
-    console.log(images)
-    console.log(beer)
-    let imglabel;
-    images.forEach(image => {
-      if(image.props.alt === beer.node.frontmatter.image.split(".")[0]) {
-          imglabel = image;
-      }  
-    })
-
-
-
+const BeerCard = ({beer}) => {
+    
     return (
         <div className="beercard">
             <div className="beercard-image">
-                {imglabel}
+            <Img fluid={beer.node.frontmatter.image.childImageSharp.fluid} alt={beer.node.frontmatter.title} style={{overflow: "visible", width: "100%"}} />
             </div>
             <div className="beercard-heading">
                 <h2 className="beercard-heading-title">{beer.node.frontmatter.title}</h2>
