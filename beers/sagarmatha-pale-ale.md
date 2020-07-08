@@ -5,6 +5,13 @@ date: "2020-01-02"
 tags: ["beer", "pale ale", "american"]
 image: ../src/images/sagarmatha.jpg
 style: "American Pale Ale"
+abv: 6
+ibu: 35
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

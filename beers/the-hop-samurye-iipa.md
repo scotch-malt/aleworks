@@ -5,6 +5,13 @@ date: "2020-02-01"
 tags: ["beer", "ipa", "imperial", "rye"]
 image: ../src/images/the_hop_samurye_label.jpg
 style: "American Rye Imperial IPA"
+abv: 8.5
+ibu: 75
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: true
 pagetype: "beer"
 ---
 

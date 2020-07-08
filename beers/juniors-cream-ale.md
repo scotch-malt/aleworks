@@ -5,6 +5,13 @@ date: "2020-01-01"
 tags: ["beer", "cream ale", "american"]
 image: ../src/images/juniors_cream_ale.jpg
 style: "Cream Ale"
+abv: 5.5
+ibu: 16
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 
