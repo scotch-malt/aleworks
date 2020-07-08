@@ -26,6 +26,15 @@
                 margin: auto;
             }
         }
+        &-news {
+            & h1 {
+                text-align: center;
+                color: white;
+                font-family: Rubik;
+                font-weight: 200;
+                font-size: 3vw;
+            }
+        }
     }
 }
 

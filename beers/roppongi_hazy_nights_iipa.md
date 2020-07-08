@@ -5,6 +5,13 @@ date: "2020-01-02"
 tags: ["beer", "double ipa", "imperial ipa", "neipa", "hazy"]
 image: ../src/images/roppongi_hazy_nights_label.jpg
 style: "NEIIPA (New England Imperial IPA)"
+abv: 8.5
+ibu: 15
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

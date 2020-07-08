@@ -5,6 +5,13 @@ date: "2020-01-03"
 tags: ["beer", "esb"]
 image: ../src/images/flagon_filler.jpg
 style: "ESB (Extra Special Bitter)"
+abv: 5
+ibu: 37
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

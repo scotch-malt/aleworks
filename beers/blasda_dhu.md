@@ -5,6 +5,13 @@ date: "2019-12-31"
 tags: ["beer", "stout", "dry"]
 image: ../src/images/blasda_dhu.jpg
 style: "Dry Stout"
+abv: 5
+ibu: 37
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

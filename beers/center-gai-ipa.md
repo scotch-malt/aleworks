@@ -5,6 +5,13 @@ date: "2020-03-01"
 tags: ["beer", "ipa", "west coast"]
 image: ../src/images/center_gai_ipa.jpg
 style: "American West Coast IPA"
+abv: 7
+ibu: 67
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

@@ -5,6 +5,13 @@ date: "2020-04-02"
 tags: ["beer", "ipa", "neipa", "hazy"]
 image: ../src/images/yoyogi_lazy_hazy_label.jpg
 style: "NEIPA (New England IPA)"
+abv: 7.5
+ibu: 15
+brewery: TOKYO ALEWORKS
+location: Tokyo, Japan
+half: 700
+pint: 1100
+stem: false
 pagetype: "beer"
 ---
 

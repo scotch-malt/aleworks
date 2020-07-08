@@ -6,6 +6,7 @@ import NewsFeed from "../components/newsfeed";
 import Img from "gatsby-image";
 import "../styles/index.scss";
 import "typeface-rubik";
+import "typeface-raleway";
 
 const Index = ({data}) => {
     let news = [];

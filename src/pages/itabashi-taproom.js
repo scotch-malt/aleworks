@@ -3,6 +3,7 @@ import Layout from "../components/taproomlayout";
 import Footer from "../components/footer";
 import InfoCard from "../components/infocard";
 import NewsFeed from "../components/newsfeed";
+import Taplist from "../components/taplist";
 import "../styles/itabashi-taproom.scss";
 
 const ItabashiTaproom = ({data}) => {
@@ -34,7 +35,8 @@ const ItabashiTaproom = ({data}) => {
                         </div>
                     </div>
                     <div className="itabashi-taproom-main-news">
-    
+                    <h1 id="taplist">Today's Beers</h1>
+                      <Taplist />
                       
                     </div>
                </div>
