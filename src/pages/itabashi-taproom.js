@@ -35,7 +35,7 @@ const ItabashiTaproom = ({data}) => {
                         </div>
                     </div>
                     <div className="itabashi-taproom-main-news">
-                    <h1 id="taplist">Today's Beers</h1>
+                    <h1 id="taplist"></h1>
                       <Taplist />
                       
                     </div>
