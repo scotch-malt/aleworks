@@ -30,7 +30,7 @@ const ItabashiTaproom = ({data}) => {
                         <div className="itabashi-taproom-main-body-info">
                             <InfoCard info={info} />  
                         </div>
-                        <div className="itabashi-taproom-main-body-social">
+                        <div className="itabashi-taproom-main-body-info">
                             <InfoCard info={info} />
                         </div>
                     </div>

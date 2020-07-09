@@ -62,6 +62,7 @@ const Taplist = () => {
                     half={beer.node.frontmatter.half}
                     pint={beer.node.frontmatter.pint}
                     stem={beer.node.frontmatter.stem}
+                    description={beer.node.html}
                 />
                 )
             })}
