@@ -1,0 +1,29 @@
+.foodmenu {
+    // background: #101d30;
+    background: rgba(16, 29, 48, .7);
+    //width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-image {
+        &-wrap {
+            width: 17vw;
+        }
+    }
+    &-list {
+        width: 55%;
+        &-item {
+            &-title {
+                color: white;
+                font-family: Raleway;
+            }
+            &-price {
+                color: white;
+                font-family: Rubik;
+            }
+            & h1 {
+                font-size: 2vw;
+            }
+        }
+    }
+}
