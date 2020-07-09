@@ -46,7 +46,11 @@
                     width: 60%;
                 }
             }
-            
+            &-news {
+                & h1 {
+                    font-size: 4vw;
+                }  
+            }
         }
     }
 }
@@ -59,7 +63,11 @@
                     width: 70%;
                 }
             }
-            
+            &-news {
+                & h1 {
+                    font-size: 5vw;
+                }  
+            }
         }
     }
 }
@@ -71,7 +79,11 @@
                     width: 80%;
                 }
             }
-            
+            &-news {
+                & h1 {
+                    font-size: 6vw;
+                }  
+            }
         }
     }
 }
@@ -83,7 +95,11 @@
                     width: 85%;
                 }
             }
-           
+            &-news {
+                & h1 {
+                    font-size: 6vw;
+                }  
+            }
         }
     }
 }
@@ -95,7 +111,11 @@
                     width: 90%;
                 }
             }
-            
+            &-news {
+                & h1 {
+                    font-size: 6vw;
+                }  
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ const InfoCard = ({info}) => {
     console.log(info)
     return (
         <div className="infocard">
-            <h1 className="infocard-title">{info[0].node.frontmatter.title}</h1>
+            <h1 className="infocard-title">Shop Information</h1>
             <div dangerouslySetInnerHTML={{__html: info[0].node.html}} />
         </div>
     );
