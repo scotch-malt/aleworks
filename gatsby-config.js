@@ -20,6 +20,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `food`,
+                path: `${__dirname}/food`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 name: `itabashi_info`,
                 path: `${__dirname}/info/itabashi`
             }

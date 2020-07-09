@@ -15,18 +15,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        &-body {
-            display: flex;
-            &-info {
-                width: 40%;
-                margin: auto;
-            }
-            &-social {
-                width: 40%;
-                margin: auto;
-            }
+        &-info {
+            width: 70%;
+            margin: auto;
         }
-        &-news {
+        &-beer {
+            width: 70%;
             & h1 {
                 text-align: center;
                 color: white;
@@ -35,18 +29,20 @@
                 font-size: 3vw;
             }
         }
+        &-food {
+            width: 70%;
+        
+        }
     }
 }
 
 @media only screen and (max-width: 1300px) {
     .itabashi-taproom {
         &-main {
-            &-body {
-                &-info {
-                    width: 60%;
-                }
+            &-info {
+                width: 60%;
             }
-            &-news {
+            &-beer {
                 & h1 {
                     font-size: 4vw;
                 }  
@@ -57,13 +53,10 @@
 @media only screen and (max-width: 1000px) {
     .itabashi-taproom {
         &-main {
-            &-body {
-                flex-direction: column;
-                &-info {
-                    width: 70%;
-                }
+            &-info {
+                width: 70%;
             }
-            &-news {
+            &-beer {
                 & h1 {
                     font-size: 5vw;
                 }  
@@ -74,12 +67,10 @@
 @media only screen and (max-width: 800px) {
     .itabashi-taproom {
         &-main {
-            &-body {
-                &-info {
-                    width: 80%;
-                }
+            &-info {
+                width: 80%;
             }
-            &-news {
+            &-beer {
                 & h1 {
                     font-size: 6vw;
                 }  
@@ -90,12 +81,10 @@
 @media only screen and (max-width: 700px) {
     .itabashi-taproom {
         &-main {
-            &-body {
-                &-info {
-                    width: 85%;
-                }
+            &-info {
+                width: 85%;
             }
-            &-news {
+            &-beer {
                 & h1 {
                     font-size: 6vw;
                 }  
@@ -106,12 +95,10 @@
 @media only screen and (max-width: 600px) {
     .itabashi-taproom {
         &-main {
-            &-body {
-                &-info {
-                    width: 90%;
-                }
+            &-info {
+                width: 90%;
             }
-            &-news {
+            &-beer {
                 & h1 {
                     font-size: 6vw;
                 }  

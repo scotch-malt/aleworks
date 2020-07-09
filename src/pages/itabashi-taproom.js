@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import InfoCard from "../components/infocard";
 import NewsFeed from "../components/newsfeed";
 import Taplist from "../components/taplist";
+import FoodMenu from "../components/foodmenu";
 import "../styles/itabashi-taproom.scss";
 
 const ItabashiTaproom = ({data}) => {
@@ -26,18 +27,16 @@ const ItabashiTaproom = ({data}) => {
        <Layout>
            <div className="itabashi-taproom">
                <div className="itabashi-taproom-main">
-                    <div className="itabashi-taproom-main-body">
-                        <div className="itabashi-taproom-main-body-info">
-                            <InfoCard info={info} />  
-                        </div>
-                        <div className="itabashi-taproom-main-body-info">
-                            <InfoCard info={info} />
-                        </div>
+                    <div className="itabashi-taproom-main-info">
+                        <InfoCard info={info} />  
                     </div>
-                    <div className="itabashi-taproom-main-news">
+                    <div className="itabashi-taproom-main-beer">
                     <h1 id="taplist"></h1>
                       <Taplist />
-                      
+                    </div>
+                    <div className="itabashi-taproom-main-food">
+                      <h1 id="food"></h1>
+                      <FoodMenu />
                     </div>
                </div>
                <Footer />
