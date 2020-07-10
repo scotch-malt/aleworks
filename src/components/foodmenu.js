@@ -61,7 +61,7 @@ const FoodMenu = () => {
                       <div className="foodmenu-list-item">
                           <h1 className="foodmenu-list-item-title">{item.node.frontmatter.title}</h1>
                           <h2 className="foodmenu-list-item-title">{item.node.frontmatter.jtitle}</h2>
-                          <div className="foodmenu-list-item-title" dangerouslySetInnerHTML={{__html: item.node.html}} />
+                          <div className="foodmenu-list-item-description" dangerouslySetInnerHTML={{__html: item.node.html}} />
                           <small className="foodmenu-list-item-price">¥{item.node.frontmatter.price}</small>
                           <hr/>
                           <br/>
