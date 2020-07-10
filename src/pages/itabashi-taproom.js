@@ -17,11 +17,11 @@ const ItabashiTaproom = ({data}) => {
       }
     })
     data.allMarkdownRemark.edges.forEach((edge, i) => {
-      if(edge.node.frontmatter.pagetype === "info" && edge.node.frontmatter.title === "Itabashi Shop Information") {
+      if(edge.node.frontmatter.pagetype === "info" && (edge.node.frontmatter.title === "Itabashi Shop Information" || edge.node.frontmatter.title === "Itabashi Shop Access")) {
         info.push(edge)
       }
     })
-
+    console.log(info)
 
     return (
        <Layout>

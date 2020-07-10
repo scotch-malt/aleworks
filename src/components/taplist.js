@@ -47,7 +47,7 @@ const Taplist = () => {
      console.log(beers)
     return (
         <div className="taplist">
-            <h1>Today's Beers</h1>
+            <h1 className="taplist-title">Today's Beers</h1>
             {beers.map(beer => {
                 return (
                     <TapBeer 

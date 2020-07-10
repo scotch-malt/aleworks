@@ -24,9 +24,9 @@
             & h1 {
                 text-align: center;
                 color: white;
-                font-family: Rubik;
-                font-weight: 200;
-                font-size: 3vw;
+                font-family: Raleway;
+                //font-weight: 200;
+                font-size: 4vw;
             }
         }
         &-food {
@@ -40,11 +40,12 @@
     .itabashi-taproom {
         &-main {
             &-info {
-                width: 60%;
+                width: 80%;
             }
             &-beer {
+                width: 80%;
                 & h1 {
-                    font-size: 4vw;
+                    font-size: 5vw;
                 }  
             }
         }
@@ -54,11 +55,12 @@
     .itabashi-taproom {
         &-main {
             &-info {
-                width: 70%;
+                width: 90%;
             }
             &-beer {
+                width: 90%;
                 & h1 {
-                    font-size: 5vw;
+                    font-size: 6vw;
                 }  
             }
         }
@@ -70,11 +72,6 @@
             &-info {
                 width: 80%;
             }
-            &-beer {
-                & h1 {
-                    font-size: 6vw;
-                }  
-            }
         }
     }
 }
@@ -84,24 +81,15 @@
             &-info {
                 width: 85%;
             }
-            &-beer {
-                & h1 {
-                    font-size: 6vw;
-                }  
-            }
         }
     }
 }
 @media only screen and (max-width: 600px) {
     .itabashi-taproom {
         &-main {
+            margin-top: 25vh;
             &-info {
                 width: 90%;
-            }
-            &-beer {
-                & h1 {
-                    font-size: 6vw;
-                }  
             }
         }
     }
