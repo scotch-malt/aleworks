@@ -25,13 +25,11 @@
                 text-align: center;
                 color: white;
                 font-family: Raleway;
-                //font-weight: 200;
                 font-size: 4vw;
             }
         }
         &-food {
             width: 70%;
-        
         }
     }
 }
@@ -48,6 +46,9 @@
                     font-size: 5vw;
                 }  
             }
+            &-food {
+                width: 80%;
+            }
         }
     }
 }
@@ -63,34 +64,17 @@
                     font-size: 6vw;
                 }  
             }
-        }
-    }
-}
-@media only screen and (max-width: 800px) {
-    .itabashi-taproom {
-        &-main {
-            &-info {
-                width: 80%;
+            &-food {
+                width: 90%;
             }
         }
     }
 }
-@media only screen and (max-width: 700px) {
-    .itabashi-taproom {
-        &-main {
-            &-info {
-                width: 85%;
-            }
-        }
-    }
-}
+
 @media only screen and (max-width: 600px) {
     .itabashi-taproom {
         &-main {
             margin-top: 25vh;
-            &-info {
-                width: 90%;
-            }
         }
     }
 }
