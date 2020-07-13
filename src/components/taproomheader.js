@@ -32,7 +32,6 @@ const TaproomHeader = () => {
                     <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#food">Food</Link>
                 </div>
             </div>
-
         </div>  
     );
 }
