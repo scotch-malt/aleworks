@@ -50,25 +50,29 @@ const FoodMenu = () => {
     console.log(food)
     return (
         <div className="foodmenu">
-            <div className="foodmenu-image">
-                <div className="foodmenu-image-wrap">
-                    <Img fluid={data.file.childImageSharp.fluid} style={{width: "100%"}} />
+            <h1 className="foodmenu-title">Food</h1>
+            <div className="foodmenu-main">
+                <div className="foodmenu-main-image">
+                    <div className="foodmenu-main-image-wrap">
+                        <Img fluid={data.file.childImageSharp.fluid} style={{width: "100%"}} />
+                    </div>
+                </div>
+                <div className="foodmenu-main-list">
+                    {food.map(item => {
+                        return (
+                            <div className="foodmenu-main-list-item">
+                                <h1 className="foodmenu-main-list-item-title">{item.node.frontmatter.title}</h1>
+                                <h2 className="foodmenu-main-list-item-title">{item.node.frontmatter.jtitle}</h2>
+                                <div className="foodmenu-main-list-item-description" dangerouslySetInnerHTML={{__html: item.node.html}} />
+                                <small className="foodmenu-main-list-item-price">¥{item.node.frontmatter.price}</small>
+                                <hr/>
+                                <br/>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
-            <div className="foodmenu-list">
-              {food.map(item => {
-                  return (
-                      <div className="foodmenu-list-item">
-                          <h1 className="foodmenu-list-item-title">{item.node.frontmatter.title}</h1>
-                          <h2 className="foodmenu-list-item-title">{item.node.frontmatter.jtitle}</h2>
-                          <div className="foodmenu-list-item-description" dangerouslySetInnerHTML={{__html: item.node.html}} />
-                          <small className="foodmenu-list-item-price">¥{item.node.frontmatter.price}</small>
-                          <hr/>
-                          <br/>
-                      </div>
-                  )
-              })}
-            </div>
+            
         </div>
     );
 }

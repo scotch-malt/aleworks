@@ -28,8 +28,8 @@ const TaproomHeader = () => {
                 </Link>
                 <h1 className="taproomheader-contents-title">Itabashi Taproom</h1>
                 <div className="taproomheader-contents-links">
-                    <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#shop">Shop Info</Link>
                     <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#taplist">Taplist</Link>
+                    <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#food">Food</Link>
                 </div>
             </div>
 
