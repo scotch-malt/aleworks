@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "src/images/uploads"
-public_folder: "/src/images/uploads"
+media_folder: "src/images"
+public_folder: "/src/images"
 
 collections:
   - name: "news"
@@ -13,7 +13,6 @@ collections:
     fields: 
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
