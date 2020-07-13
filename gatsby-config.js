@@ -43,6 +43,7 @@ module.exports = {
               plugins: [`gatsby-remark-responsive-iframe`],
             },
         },
+        `gatsby-plugin-netlify-cms`,
         {
             resolve: "gatsby-plugin-anchor-links",
             options: {
