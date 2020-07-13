@@ -4,6 +4,14 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,
         {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                `gatsby-plugin-netlify-cms-paths`,
+              ],
+            },
+          },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `news`,
@@ -40,7 +48,10 @@ module.exports = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-              plugins: [`gatsby-remark-responsive-iframe`],
+              plugins: [
+                  `gatsby-remark-responsive-iframe`,
+                  `gatsby-plugin-netlify-cms-paths`,
+                  ],
             },
         },
         `gatsby-plugin-netlify-cms`,
