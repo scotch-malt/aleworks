@@ -19,7 +19,7 @@ collections:
   - name: "info-itabashi"
     label: "Info Itabashi"
     folder: "info/itabashi"
-    create: "true"
+    create: true
     fields: 
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
