@@ -16,4 +16,12 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "info-itabashi"
+    label: "Info Itabashi"
+    folder: "info/itabashi"
+    create: "true"
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Type", name: "pagetype", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
