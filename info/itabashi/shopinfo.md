@@ -2,9 +2,9 @@
 title: Itabashi Shop Information
 pagetype: info
 ---
-
 東京都板橋区板橋1-8-4
 板橋Cask Village 1階
+
 <hr>
 <br>
 営業時間
@@ -13,11 +13,10 @@ pagetype: info
 ※平日15:00~17:30はカフェタイムとなり、軽食のみのご提供となります。ハンバーガーはご注文いただけませんのでご注意ください
 
 ラストオーダー
-　Food　閉店1h前
+　Foodz　閉店1h前
 　Drink　閉店30min前
 
 定休日　月曜日
 ※月曜日が祝日の場合、火曜日が店休となります。
 
 TEL　03-3961-1196
-
