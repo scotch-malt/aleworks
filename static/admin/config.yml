@@ -24,4 +24,12 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "info-yurakucho"
+    label: "Info Yurakucho"
+    folder: "info/yurakucho"
+    create: true
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Type", name: "pagetype", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
