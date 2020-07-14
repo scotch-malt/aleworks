@@ -42,6 +42,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `yurakucho_info`,
+                path: `${__dirname}/info/yurakucho`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/src/images/`
             }
         },
