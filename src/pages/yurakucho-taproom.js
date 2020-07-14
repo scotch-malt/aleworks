@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/taproomlayout";
+import Layout from "../components/yurakuchotaproomlayout";
 import Footer from "../components/footer";
 import InfoCard from "../components/infocard";
 import Taplist from "../components/taplist";
 import FoodMenu from "../components/foodmenu";
 import "../styles/itabashi-taproom.scss";
 
-const ItabashiTaproom = ({data}) => {
+const YurakuchoTaproom = ({data}) => {
     let news = [];
     let info = [];
 
@@ -16,13 +16,13 @@ const ItabashiTaproom = ({data}) => {
       }
     })
     data.allMarkdownRemark.edges.forEach((edge, i) => {
-      if(edge.node.frontmatter.pagetype === "info" && (edge.node.frontmatter.title === "Itabashi Shop Information" || edge.node.frontmatter.title === "Itabashi Shop Access")) {
+      if(edge.node.frontmatter.pagetype === "info" && (edge.node.frontmatter.title === "Yurakucho Shop Information" || edge.node.frontmatter.title === "Yurakucho Shop Access")) {
         info.push(edge)
       }
     })
 
     return (
-       <Layout>
+       <Layout taproom={info[0].node.frontmatter.title.split(" ")[0]}>
            <div className="itabashi-taproom">
                <div className="itabashi-taproom-main">
                     <div className="itabashi-taproom-main-info">
@@ -43,10 +43,10 @@ const ItabashiTaproom = ({data}) => {
     );
 }
 
-export default ItabashiTaproom;
+export default YurakuchoTaproom;
 
 export const pageQuery = graphql`
-query itabashiTaproomQuery {
+query yurakuchoTaproomQuery {
   file(relativePath: { eq: "TAW_logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
