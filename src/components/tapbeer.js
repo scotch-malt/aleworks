@@ -1,10 +1,24 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image";
 import "../styles/tapbeer.scss";
 
 const TapBeer = ({image, name, jname, brewery, location, style, ibu, abv, half, pint, stem, description}) => {
+    const taw = useStaticQuery(graphql`
+        query tapbeerQuery {
+            file(relativePath: { eq: "taw_logo_rectangle.png" }) {
+                childImageSharp {
+                    # Specify the image processing specifications right in the query.
+                    fluid(maxWidth: 600, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+  `)
+  console.log(taw)
+
     let price = []
-    console.log(half)
     if (stem) {
         price.push(<p>Stem: ¥{pint}</p>)
     } else {
@@ -15,7 +29,7 @@ const TapBeer = ({image, name, jname, brewery, location, style, ibu, abv, half, 
             <div className="tapbeer">
                 <div className="tapbeer-top">
                     <div className="tapbeer-top-image">
-                        <Img fluid={image.childImageSharp.fluid} style={{width: "100%"}} />
+                        <Img fluid={image ? image.childImageSharp.fluid : taw.file.childImageSharp.fluid } style={{width: "100%"}} />
                     </div>
                     <div className="tapbeer-top-name">
                         <p>{name}</p>
