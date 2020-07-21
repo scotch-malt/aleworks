@@ -16,6 +16,13 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "beers"
+    label: "Beers"
+    folder: "beers"
+    create: true
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Show", name: "show", widget: "boolean"}
   - name: "info-itabashi"
     label: "Info Itabashi"
     folder: "info/itabashi"
