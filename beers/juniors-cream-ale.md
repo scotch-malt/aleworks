@@ -13,6 +13,7 @@ half: 700
 pint: 1100
 stem: false
 pagetype: "beer"
+show: false
 ---
 
 ライトな麦芽とホップのキャラクターを持つ、爽快感たっぷり、のどごしのいいエール。エール酵母で作るアメリカンライトスタイル。醸造責任者の父が生前飲んでいたビールがインスピレーション。Japan Great Beer Awards 2020年銅賞受賞！

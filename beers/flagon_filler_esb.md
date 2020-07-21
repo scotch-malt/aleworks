@@ -13,6 +13,7 @@ half: 700
 pint: 1100
 stem: false
 pagetype: "beer"
+show: false
 ---
 
 英国のパブでよく飲まれるエキストラ・スペシャル・ビター。まろやかな麦芽の甘味とバランスの良い苦味が特徴。ウイスキーのチェーサービールに最適！Japan Great Beer Awards 2020年金賞受賞！
