@@ -30,6 +30,7 @@ const Taplist = () => {
                             pint 
                             stem
                             pagetype
+                            show
                         }
                     }
                 }
@@ -40,7 +41,7 @@ const Taplist = () => {
 
      let beers = []
      data.allMarkdownRemark.edges.forEach(item => {
-         if (item.node.frontmatter.pagetype === "beer") {
+         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.show === true) {
              beers.push(item)
          }
      })
