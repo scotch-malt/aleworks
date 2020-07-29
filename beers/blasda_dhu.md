@@ -15,7 +15,7 @@ tags:
   - dry
 image: ../src/images/blasda_dhu.jpg
 ibu: 37
-show: false
+show: true
 pint: 1100
 ---
 
