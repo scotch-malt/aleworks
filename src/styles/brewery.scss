@@ -9,12 +9,31 @@
     min-height: 100vh;
     &-main {
         margin-top: 23vh;
+        text-align: center;
+        &-schoollink {
+            border: 1px solid white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px dodgerblue;
+            padding: 10px;
+            background: white;
+            color: #101d30;
+            text-decoration: none;
+            font-family: Rubik;
+        }
+        &-school {
+            text-align: center;
+            color: white;
+            font-family: Rubik;
+            font-weight: 400;
+            
+        }
         &-title {
             color: white;
             font-family: Rubik;
             font-weight: 400;
             font-size: 2.5rem;
             text-align: center;
+            margin-top: 100px;
         }
         &-body {
             width: 40%;
@@ -39,7 +58,34 @@
                     font-family: Rubik; 
                 }
             }
-           
+            &-school {
+                &-heading {
+                    text-align: center;
+                    color: white;
+                    font-family: Rubik;
+                    font-weight: 400;
+                }
+                & p {
+                    text-align: center;
+                    color: white;
+                    font-family: Rubik; 
+                }
+                & li {
+                    color: white;
+
+                }
+                & button {
+                    padding: 10px;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    &:hover {
+                        background: #101d30;
+                        color: white;
+                        border: 1px solid white;
+                    }
+
+                }
+            }  
         }
     }
 }
