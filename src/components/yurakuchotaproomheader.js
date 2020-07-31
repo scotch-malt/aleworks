@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Img from "gatsby-image";
 import "../styles/taproomheader.scss";
 
@@ -28,8 +27,8 @@ const YurakuchoTaproomHeader = () => {
                 </Link>
                 <h1 className="taproomheader-contents-title">Yurakucho Taproom</h1>
                 <div className="taproomheader-contents-links">
-                    <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#taplist">Taplist</Link>
-                    <Link className="taproomheader-contents-links-link" to="/itabashi-taproom#food">Food</Link>
+                    <Link className="taproomheader-contents-links-link" to="/yurakucho-taproom#taplist">Taplist</Link>
+                    <Link className="taproomheader-contents-links-link" to="/yurakucho-taproom#food">Food</Link>
                 </div>
             </div>
         </div>  

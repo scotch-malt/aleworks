@@ -26,7 +26,7 @@ const Taprooms = ({data}) => {
                             <h2 className="taprooms-main-body-card-title">ITABASHI TAPROOM (板橋店)</h2>
                             <div className="taprooms-main-body-card-links">
                                 <Link to="/itabashi-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
-                                <a href=""><button><FontAwesomeIcon icon={faPhoneSquare} size="2x" /><span>03-3961-1196</span></button></a>
+                                <a href="tel:03-3961-1196"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x" /><span>03-3961-1196</span></button></a>
                                 <a href="https://goo.gl/maps/4Uzo1R5V1f1MNndD9" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const Taprooms = ({data}) => {
                             <h2 className="taprooms-main-body-card-title">YURAKUCHO TAPROOM (有楽町店)</h2>
                             <div className="taprooms-main-body-card-links">
                                 <Link to="/yurakucho-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
-                                <a href=""><button><FontAwesomeIcon icon={faPhoneSquare} size="2x"/><span>03-3961-1196</span></button></a>
+                                <a href="tel:03-3961-1196"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x"/><span>03-3961-1196</span></button></a>
                                 <a href="https://goo.gl/maps/4Uzo1R5V1f1MNndD9" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
                             </div>
                         </div>

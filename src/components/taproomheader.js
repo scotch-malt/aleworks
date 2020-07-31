@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Img from "gatsby-image";
 import "../styles/taproomheader.scss";
 

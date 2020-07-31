@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="footer-contents">
                 <div className="footer-contents-social">
                     <div className="footer-contents-social-icon">
-                        <img src={Facebook} alt=""/>
+                        <a href="https://www.facebook.com/TokyoAleworksTaproom/"><img src={Facebook} alt=""/></a>
                     </div>
                     <div className="footer-contents-social-icon">
-                        <img src={Instagram} alt=""/>
+                        <a href="https://www.instagram.com/tokyoaleworks/"><img src={Instagram} alt=""/></a>
                     </div>
                 </div>
                 <p>© {new Date().getFullYear()} TOKYO ALEWORKS</p>
