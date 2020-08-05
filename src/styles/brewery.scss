@@ -77,12 +77,13 @@
                 & button {
                     padding: 10px;
                     border: 1px solid transparent;
+                    background: lightgray;
                     cursor: pointer;
-                    // &:hover {
-                    //     background: #101d30;
-                    //     color: white;
-                    //     border: 1px solid white;
-                    // }
+                    &:hover {
+                        background: #101d30;
+                        color: white;
+                        border: 1px solid white;
+                    }
 
                 }
             }  
