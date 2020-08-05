@@ -1,6 +1,6 @@
 .taprooms {
     background: #101d30;
-    background-image: url("../images/itabashi_taproom_collage.jpg");
+    background-image: url("../images/taproom_collage.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -136,7 +136,7 @@
 
 @media only screen and (max-width: 1100px) {
     .taprooms {
-        background-image: url("../images/itabashi_taproom_collage_1000.jpg");
+        background-image: url("../images/taproom_collage_1000.jpg");
         &-main {
             &-body {
                  width: 65vw;
@@ -236,32 +236,3 @@
     }
 }
 
-// @media only screen and (max-width: 1700px) {
-//     .taprooms {
-//         &-main {
-//             &-body {
-//                 width: 85%;
-//             }
-//         }
-//     }
-// }
-
-// @media only screen and (max-width: 1550px) {
-//     .taprooms {
-//         &-main {
-//             &-body {
-//                 width: 90%;
-//             }
-//         }
-//     }
-// }
-
-// @media only screen and (max-width: 1450px) {
-//     .taprooms {
-//         &-main {
-//             &-body {
-//                 width: 95%;
-//             }
-//         }
-//     }
-// }
