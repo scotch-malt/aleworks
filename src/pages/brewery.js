@@ -70,7 +70,7 @@ const Brewery = () => {
                             <p>ネット予約のみとなっております。</p>
                             <p>予約受付外の期間は「受付停止」と表示されます。</p>
                             <p>受付情報につきましては、NEWS、SNSも併せてご覧ください。</p>
-                            <a href="https://airrsv.net/tokyoaleworks/calendar" target="_blank" rel="noopener noreferrer"><button style={{margin: "50px"}}>ご予約はこちら</button></a>
+                            <a href="https://airrsv.net/tokyoaleworks/calendar" target="_blank" rel="noopener noreferrer"><button type="button" style={{margin: "50px"}}>ご予約はこちら</button></a>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験参加人数 -</h2>
                             <p>１仕込み５名様までとさせていただきます。
                                 作業的に、１～３名様がおすすめです。</p>
@@ -86,7 +86,7 @@ const Brewery = () => {
                             <p>醸造体験時にラベルをお選びいただけます。
                             下記「ラベルサンプル一覧」にてデザインをご確認ください。
                             </p>
-                            <a href="https://tokyoaleworks.com/wp/wp-content/uploads/2019/12/Tokyo_Ale_Works_Label-data.pdf" target="_blank" rel="noopener noreferrer"><button style={{margin: "50px"}}>ラベルサンプル一覧</button></a>
+                            <a href="https://tokyoaleworks.com/wp/wp-content/uploads/2019/12/Tokyo_Ale_Works_Label-data.pdf" target="_blank" rel="noopener noreferrer"><button type="button" style={{margin: "50px"}}>ラベルサンプル一覧</button></a>
                             <p style={{color: "red"}}>※オリジナルデータでの入稿も可能ですのでおたずね下さい</p>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験ビール納期 -</h2>
                             <p>醸造仕込み日から約5週間後に配送</p>
