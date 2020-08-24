@@ -62,7 +62,7 @@ query indexQuery {
         excerpt(pruneLength: 400)
         frontmatter {
           title 
-          date 
+          date(formatString: "MMMM DD, YYYY") 
           tags
           image {
             childImageSharp {
