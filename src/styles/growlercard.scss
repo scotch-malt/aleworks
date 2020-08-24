@@ -1,0 +1,35 @@
+.growlercard {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-image {
+        width: 20vw;
+        & img {
+            border: 1px solid transparent;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 40vw;
+        }
+    }
+    &-specs {
+        & h3 {
+            font-weight: 200;
+        }
+        & a {
+            & button {
+                cursor: pointer;
+                padding: 5px 10px;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                background: gold;
+                box-shadow: 1px 1px 5px;
+            }
+        }
+        
+    }
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+}
