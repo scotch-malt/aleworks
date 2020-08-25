@@ -1,0 +1,98 @@
+.howto {
+    font-family: Yu Gothic;
+    &-main {
+        margin-top: 25vh;
+        text-align: center;
+        &-guide {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            &-arrow {
+                color: dodgerblue;
+            }
+            & a {
+                text-decoration: underline;
+            }
+        }
+        &-basic {
+            &-first5 {
+                width: 40%;
+                margin: auto;
+                &-instruction {
+                    
+                }
+                &-image {
+                    max-width: 300px;
+                    margin: auto;
+                    & img {
+                        width: 100%;
+                        height: auto;
+                        border: none;
+                        box-shadow: 1px 1px 3px;
+                    }
+                }
+                @media only screen and (max-width: 1000px) {
+                    width: 60%;
+                }
+                @media only screen and (max-width: 700px) {
+                    width: 70%;
+                }
+                @media only screen and (max-width: 500px) {
+                    width: 90%;
+                }
+            }
+            &-vpr {
+                &-instruction {
+
+                }
+                &-image {
+                    max-width: 150px;
+                    margin: auto;
+                    & img {
+                        width: 100%;
+                        height: auto;
+                        border: none;
+                        box-shadow: 1px 1px 3px;
+                    } 
+                }
+            }
+        
+        }
+        &-temp {
+            width: 40%;
+            margin: auto;
+            @media only screen and (max-width: 1000px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 70%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 90%;
+            } 
+        }
+        &-cap {
+            width: 40%;
+            margin: auto;
+            @media only screen and (max-width: 1000px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 70%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 90%;
+            } 
+            &-image {
+                max-width: 300px;
+                margin: auto;
+                & img {
+                    width: 100%;
+                    height: auto;
+                    border: none;
+                    box-shadow: 1px 1px 3px;
+                } 
+            }
+        }
+    }
+}
