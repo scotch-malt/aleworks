@@ -24,7 +24,7 @@ const NewsFeed = ({news})=> {
                     <div key={i} className="newsfeed">
                         <div className="newsfeed-top">
                             <div className="newsfeed-top-thumb">
-                                <Img fluid={item.node.frontmatter.image ? item.node.frontmatter.image.childImageSharp.fluid : taw.file.childImageSharp.fluid} alt={item.node.frontmatter.title} style={{border: "1px solid white", width: "90px"}}/>
+                                <Img fluid={item.node.frontmatter.image ? item.node.frontmatter.image.childImageSharp.fluid : taw.file.childImageSharp.fluid} alt={item.node.frontmatter.title} style={{ width: "90px"}}/>
                             </div>
                             <div className="newsfeed-top-heading">
                                 <Link className="newsfeed-top-heading-link" to={item.node.fields.slug}><h2>{item.node.frontmatter.title}</h2></Link>

@@ -1,5 +1,5 @@
 .newsfeed {
-    background: rgba(16, 29, 48, .5);
+    //background: rgba(16, 29, 48, .5);
     padding: 10px 0;
     //border: 1px solid white;
     &-top {
@@ -10,6 +10,9 @@
         &-thumb {
             width: 90px;
             min-width: 80px;
+            & img {
+                //border: 1px solid transparent;
+            }
         }
         &-heading {
             display: flex;

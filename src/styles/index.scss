@@ -1,33 +1,4 @@
-// @mixin keyframes($animation-name) {
-//     @-webkit-keyframes #{$animation-name} {
-//       @content;
-//     }
-//     @-moz-keyframes #{$animation-name} {
-//       @content;
-//     }  
-//     @-ms-keyframes #{$animation-name} {
-//       @content;
-//     }
-//     @-o-keyframes #{$animation-name} {
-//       @content;
-//     }  
-//     @keyframes #{$animation-name} {
-//       @content;
-//     }
-//   }
-  
-//   @mixin animation($str) {
-//     -webkit-animation: #{$str};
-//     -moz-animation: #{$str};
-//     -ms-animation: #{$str};
-//     -o-animation: #{$str};
-//     animation: #{$str};      
-//   }
-  
-//   @include keyframes(fade-in) {
-//     0% { opacity: 0; }
-//     100% { opacity: 1; }
-//   }
+
 
 body {
     margin: 0;
@@ -41,8 +12,9 @@ img {
 
 .index {
     background: #101d30;
-    background-image: url("../images/brewery1bbl_strip.jpg");
+    background-image: url("../images/brewhouse_dark.jpg");
     background-repeat: no-repeat;
+    background-position: center top;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,7 +26,10 @@ img {
         justify-content: space-between;
         align-items: center;
         &-image {
-           width: 600px;
+           width: 35vw;
+           & img {
+               border: 1px solid transparent;
+           }
         }
         &-card {
             width: 50%;
@@ -93,7 +68,7 @@ img {
 
 @media only screen and (max-width: 1400px) {
     .index {
-        background-image: url("../images/brewery1bbl1400_strip.jpg");
+        //background-image: url("../images/brewery1bbl1400_strip.jpg");
         &-main {
             &-image {
                 width: 500px;
@@ -103,7 +78,7 @@ img {
 }
 @media only screen and (max-width: 1300px) {
     .index {
-        background-image: url("../images/brewery1bbl1300_strip.jpg");
+        //background-image: url("../images/brewery1bbl1300_strip.jpg");
         &-main {
             padding: 0 2%;
             &-image {
@@ -142,9 +117,9 @@ img {
 
 @media only screen and (max-width: 1000px) {
     .index {
-        background-image: url("../images/brewery1bbl1000_strip.jpg");
+        background-image: url("../images/brewhouse_dark1000.jpg");
         &-main {
-            margin-top: 25vh;
+            margin-top: 15vh;
             flex-direction: column;
             &-image {
                 width: 400px;
@@ -159,7 +134,7 @@ img {
 }
 @media only screen and (max-width: 750px) {
     .index {
-        background-image: url("../images/brewery1bbl750_strip.jpg");
+        //background-image: url("../images/brewery1bbl750_strip.jpg");
         &-main {
             &-card {
                 &-links {
@@ -175,9 +150,9 @@ img {
 }
 @media only screen and (max-width: 500px) {
     .index {
-        background-image: url("../images/brewery1bbl500_strip.jpg");
+        //background-image: url("../images/brewery1bbl500_strip.jpg");
         &-main {
-            margin-top: 25vh;
+            margin-top: 20vh;
             &-image {
                 width: 300px;
             }

@@ -6,7 +6,7 @@ import "../styles/footer.scss";
 const Footer = () => {
     return (
         <div className="footer">
-            <hr/>
+            {/* <hr/> */}
             <div className="footer-contents">
                 <div className="footer-contents-social">
                     <div className="footer-contents-social-icon">
