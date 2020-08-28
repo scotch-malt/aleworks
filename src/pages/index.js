@@ -32,7 +32,7 @@ const Index = ({data}) => {
                     <NewsFeed news={news} />
                     <div className="index-main-card-links">
                       <a href="https://www.saketry.com/tokyoaleworks.html" target="_blank" rel="noopener noreferrer"><button>BUY OUR BEER ONLINE</button></a>
-                      <Link to="/taprooms"><button>DRINK AT OUR TAPROOMS</button></Link>   
+                      <Link to="/growler/ukeg-desc"><button>GET A GROWLER</button></Link>   
                     </div>
                   </div>   
                 </div>
