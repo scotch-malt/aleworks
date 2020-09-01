@@ -39,6 +39,11 @@
         &-title {
           font-size: 10vw; 
         }
+        &-main {
+            &-list {
+                padding: 0 20px;
+            }
+        }
     }
     
 }
@@ -47,14 +52,7 @@
     .foodmenu {
         &-main {
             &-list {
-                &-item {
-                    &-description {
-                        font-size: 2vw;
-                    }
-                    &-price {
-                        font-size: 2vw;
-                    }
-                }
+                padding: 0 7px;
             }
         }
     }
@@ -62,18 +60,7 @@
 
 @media only screen and (max-width: 400px) {
     .foodmenu {
-        &-main {
-            &-list {
-                &-item {
-                    &-description {
-                        font-size: 2.3vw;
-                    }
-                    &-price {
-                        font-size: 2.3vw;
-                    }
-                }
-            }
-        }
+      
     }
 
 }
