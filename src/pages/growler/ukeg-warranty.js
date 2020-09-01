@@ -8,12 +8,12 @@ const UkegWarranty = () => {
         <Layout>
             <div className="warranty">
                 <div className="warranty-guide">
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 各部の名称</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> メンテナンス</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 保証規定</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> よくあるご質問</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
+                    <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>
+                    <Link to="/growler/ukeg-items"><span className="ukeg-desc-guide-arrow">&#62;</span> 各部の名称</Link>
+                    <Link to="/growler/ukeg-maintenance"><span className="ukeg-desc-guide-arrow">&#62;</span> メンテナンス</Link>
+                    <Link to="/growler/ukeg-warranty"><span className="ukeg-desc-guide-arrow">&#62;</span> 保証規定</Link>
+                    <Link to="/growler/ukeg-troubleshooting"><span className="ukeg-desc-guide-arrow">&#62;</span> よくあるご質問</Link>
+                    <Link to="/growler/ukeg-desc"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
                 </div>
                 <div className="warranty-main">
                     <h1 className="warranty-main-title">保証規定</h1>

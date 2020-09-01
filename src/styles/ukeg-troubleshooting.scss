@@ -19,5 +19,14 @@
         &-title {
             text-align: center;
         }
+        @media only screen and (max-width: 700px) {
+            width: 70%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 75%;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 80%;
+        }
     }
 }
