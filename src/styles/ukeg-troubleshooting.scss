@@ -1,0 +1,32 @@
+.troubleshooting {
+    font-family: Yu Gothic;
+    &-guide {
+        text-align: center;
+        margin-top: 25vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        &-arrow {
+            color: dodgerblue;
+        }
+        & a {
+            text-decoration: underline;
+        }
+    }
+    &-main {
+        width: 60%;
+        margin: auto;
+        &-title {
+            text-align: center;
+        }
+        @media only screen and (max-width: 700px) {
+            width: 70%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 75%;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 80%;
+        }
+    }
+}

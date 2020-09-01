@@ -17,12 +17,12 @@ const UkegDesc = ({data}) => {
                 <p className="ukeg-desc-howto">使い方やメンテナンスの方法などは、
                 <a href="https://www.growlerwerks.com/pages/howto">「growlerwerks.com/howto」</a>にも詳しい説明やビデオがあります（英語版）。合わせてご参照ください。</p>
                 <div className="ukeg-desc-guide">
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 各部の名称</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> メンテナンス</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 保証規定</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> よくあるご質問</Link>
-                    <Link to="/"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
+                    <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>
+                    <Link to="/growler/ukeg-items"><span className="ukeg-desc-guide-arrow">&#62;</span> 各部の名称</Link>
+                    <Link to="/growler/ukeg-maintenance"><span className="ukeg-desc-guide-arrow">&#62;</span> メンテナンス</Link>
+                    <Link to="/growler/ukeg-warranty"><span className="ukeg-desc-guide-arrow">&#62;</span> 保証規定</Link>
+                    <Link to="/growler/ukeg-troubleshooting"><span className="ukeg-desc-guide-arrow">&#62;</span> よくあるご質問</Link>
+                    <Link to="/growler/ukeg-desc"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
                 </div>
                 <div className="ukeg-desc-5feature">
                     <h1 className="ukeg-desc-5feature-title">UKEGビアサーバー5つの特徴</h1>
