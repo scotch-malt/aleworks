@@ -34,7 +34,7 @@ const YurakuchoTaproom = ({data}) => {
                     </div>
                     <div className="itabashi-taproom-main-food">
                       <h1 id="food"></h1>
-                      <FoodMenu />
+                      <FoodMenu menu="Yurakucho Taproom Food Menu" />
                     </div>
                </div>
                <Footer />
