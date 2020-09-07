@@ -1,0 +1,50 @@
+.ukeg-member {
+    font-family: Yu Gothic;
+    &-guide {
+        text-align: center;
+        margin-top: 25vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        &-arrow {
+            color: dodgerblue;
+        }
+        & a {
+            text-decoration: underline;
+        }
+    }
+    &-main {
+        width: 60%;
+        margin: auto;
+        &-title {
+            text-align: center;
+        }
+        &-tab {
+            background: #666666;
+            color: white;
+            padding: 5px 5px;
+        }
+        &-shop {
+            & h2 {
+                color: black;
+                &:hover {
+                    color: #666666;
+                }
+            }
+            &-button {
+                padding: 10px 10px;
+                border: 1px solid transparent;
+                background: #666666;
+                color: white;
+                box-shadow: 1px 1px 5px #666666;
+                cursor: pointer;
+                &:hover {
+                    background: transparent;
+                    color: #666666;
+                    border: 1px solid #666666;
+                }
+            }
+            
+        }
+    }
+}

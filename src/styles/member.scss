@@ -1,0 +1,44 @@
+.member {
+    font-family: Yu Gothic;
+    &-guide {
+        text-align: center;
+        margin-top: 25vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        &-arrow {
+            color: dodgerblue;
+        }
+        & a {
+            text-decoration: underline;
+        }
+    }
+    &-main {
+        width: 60%;
+        margin: 20px auto;
+        &-area {
+            background: #666666;
+            color: white;
+            width: 100px;
+            text-align: center;
+            &-text {
+                margin-right: 15px;
+            }   
+        }
+        &-image {
+            width: 50vw;
+            & img {
+                border: 1px solid transparent;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 80%;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            width: 70%;
+        }
+        @media only screen and (max-width: 700px) {
+            width: 80%;
+        }
+    }
+}

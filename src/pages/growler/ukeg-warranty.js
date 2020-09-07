@@ -13,7 +13,7 @@ const UkegWarranty = () => {
                     <Link to="/growler/ukeg-maintenance"><span className="ukeg-desc-guide-arrow">&#62;</span> メンテナンス</Link>
                     <Link to="/growler/ukeg-warranty"><span className="ukeg-desc-guide-arrow">&#62;</span> 保証規定</Link>
                     <Link to="/growler/ukeg-troubleshooting"><span className="ukeg-desc-guide-arrow">&#62;</span> よくあるご質問</Link>
-                    <Link to="/growler/ukeg-desc"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
+                    <Link to="/growler/ukeg-member"><span className="ukeg-desc-guide-arrow">&#62;</span> 加盟店情報</Link>
                 </div>
                 <div className="warranty-main">
                     <h1 className="warranty-main-title">保証規定</h1>

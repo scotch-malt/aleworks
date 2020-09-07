@@ -49,6 +49,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `growler_member_shops`,
+                path: `${__dirname}/growler-member-shops`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/src/images/`
             }
         },

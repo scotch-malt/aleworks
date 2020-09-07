@@ -2,6 +2,20 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const _ = require("lodash")
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      image: File @fileByRelativePath
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
@@ -19,6 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsTemplate = path.resolve(`./src/templates/newsTemplate.js`);
     const beerTemplate = path.resolve(`./src/templates/beerTemplate.js`);
+    const memberTemplate = path.resolve(`./src/templates/memberTemplate.js`)
     const result = await graphql(`
       query {
         allMarkdownRemark {
@@ -46,10 +61,18 @@ exports.createPages = async ({ graphql, actions }) => {
             slug: node.fields.slug
           }
         });
-      } else {
+      } else if (node.frontmatter.pagetype === "beer") {
         createPage({
           path: node.fields.slug,
           component: beerTemplate,
+          context: {
+            slug: node.fields.slug
+          }
+        });
+      } else {
+        createPage({
+          path: node.fields.slug,
+          component: memberTemplate,
           context: {
             slug: node.fields.slug
           }
