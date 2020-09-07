@@ -61,10 +61,10 @@ exports.createPages = async ({ graphql, actions }) => {
             slug: node.fields.slug
           }
         });
-      } else if (node.frontmatter.pagetype === "beer") {
+      } else if (node.frontmatter.pagetype === "member") {
         createPage({
           path: node.fields.slug,
-          component: beerTemplate,
+          component: memberTemplate,
           context: {
             slug: node.fields.slug
           }
@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions }) => {
       } else {
         createPage({
           path: node.fields.slug,
-          component: memberTemplate,
+          component: beerTemplate,
           context: {
             slug: node.fields.slug
           }
