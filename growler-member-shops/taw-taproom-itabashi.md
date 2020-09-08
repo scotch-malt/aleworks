@@ -1,6 +1,6 @@
 ---
 title: "TOKYO ALEWORKS TAPROOM 板橋"
-date: 2020-09-07
+date: 2020-09-08
 image: ../src/images/growler/members/taw_itabashi.jpg
 area: 東京
 pagetype: member

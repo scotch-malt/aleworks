@@ -1,6 +1,6 @@
 ---
 title: "TOKYO ALEWORKS TAPROOM 有楽町"
-date: 2020-09-07
+date: 2020-09-09
 image: ../src/images/growler/members/tasty.jpeg
 area: 東京
 pagetype: member
