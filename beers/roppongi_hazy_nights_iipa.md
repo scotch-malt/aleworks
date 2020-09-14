@@ -13,7 +13,8 @@ half: 700
 pint: 1100
 stem: false
 pagetype: "beer"
-show: false
+itabashi: true
+yurakucho: true
 ---
 
 8.5％を感じさせない非常に滑らかでジューシー、アマリロとシトラホップを2段階に分けて大量にドライホッピング。Tokyo Aleworks独自の製法でごくごく飲めるへイジーIIPAが実現。六本木で飲みに行った夜、霞んだ記憶にならないように飲み過ぎにご注意ください。

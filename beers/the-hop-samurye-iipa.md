@@ -13,7 +13,8 @@ half: 700
 pint: 1100
 stem: true
 pagetype: "beer"
-show: false
+itabashi: true
+yurakucho: true
 ---
 
 約25％ライ麦を入れることによってスパイシー感のある、昔はあったけど最近は少ないインペリアルIPAスタイルです。侍だけにこの切れ味がいいです！ジャパン・グレートビア・アワーズ2020年銀賞受賞！

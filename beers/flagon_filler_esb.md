@@ -14,7 +14,8 @@ tags:
   - esb
 image: ../src/images/flagon_filler.jpg
 ibu: 37
-show: true
+itabashi: true
+yurakucho: true
 pint: 1100
 ---
 

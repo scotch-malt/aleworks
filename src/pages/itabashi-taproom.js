@@ -30,7 +30,7 @@ const ItabashiTaproom = ({data}) => {
                     </div>
                     <div className="itabashi-taproom-main-beer">
                     <h1 id="taplist"></h1>
-                      <Taplist />
+                      <Taplist taproom="itabashi" />
                     </div>
                     <div className="itabashi-taproom-main-food">
                       <h1 id="food"></h1>

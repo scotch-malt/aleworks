@@ -13,7 +13,8 @@ half: 700
 pint: 1100
 stem: false
 pagetype: "beer"
-show: false
+itabashi: true
+yurakucho: true
 ---
 
 パッションフルーツやマンゴー、パイナップルの様な甘味とジューシーさ。透明なビールで有名なTokyo Aleworksがお届けする最高のヘイジー(濁り)IPA。豪華にIdaho7、ギャラクシー、シムコー使用。

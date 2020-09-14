@@ -13,7 +13,8 @@ half: 700
 pint: 1100
 stem: false
 pagetype: "beer"
-show: false
+itabashi: true
+yurakucho: true
 ---
 
 ネパール語で「エバレスト山」ごくごく飲めちゃう深みのペールエール。東京にあるクラフトビールとネパール料理の名店「ヒマラヤテーブル」の周年記念で開発したビールで人気が出すぎて定番決定！

@@ -15,7 +15,8 @@ tags:
   - dry
 image: ../src/images/blasda_dhu.jpg
 ibu: 37
-show: true
+itabashi: true
+yurakucho: true
 pint: 1100
 ---
 

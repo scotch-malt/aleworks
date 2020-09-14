@@ -3,7 +3,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import TapBeer from "../components/tapbeer";
 import "../styles/taplist.scss";
 
-const Taplist = () => {
+const Taplist = ({taproom}) => {
+    
     const data = useStaticQuery(graphql`
         query taplistQuery {
             allMarkdownRemark {
@@ -30,7 +31,8 @@ const Taplist = () => {
                             pint 
                             stem
                             pagetype
-                            show
+                            itabashi
+                            yurakucho
                         }
                     }
                 }
@@ -38,20 +40,32 @@ const Taplist = () => {
         }   
     
     `)
-
+    
      let beers = []
+     let itabashi_beers = []
+     let yurakucho_beers = []
      data.allMarkdownRemark.edges.forEach(item => {
-         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.show === true) {
-             beers.push(item)
+         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.itabashi === true) {
+             itabashi_beers.push(item)
+         }
+         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.yurakucho === true) {
+             yurakucho_beers.push(item)
          }
      })
-     console.log(beers)
+
+     if (taproom === "itabashi") {
+        beers = itabashi_beers
+     } else {
+         beers = yurakucho_beers
+     }
+     
     return (
         <div className="taplist">
             <h1 className="taplist-title">Today's Beers</h1>
-            {beers.map(beer => {
+            {beers.map((beer, i) => {
                 return (
                     <TapBeer 
+                    key={i}
                     image={beer.node.frontmatter.image}
                     name={beer.node.frontmatter.title}
                     jname={beer.node.frontmatter.jtitle}

@@ -22,7 +22,8 @@ collections:
     create: true
     fields: 
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Show", name: "show", widget: "boolean"}
+      - { label: "Itabashi Show", name: "itabashi", widget: "boolean"}
+      - { label: "Yurakucho Show", name: "yurakucho", widget: "boolean"}
   - name: "info-itabashi"
     label: "Info Itabashi"
     folder: "info/itabashi"

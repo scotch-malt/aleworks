@@ -16,7 +16,6 @@ const TapBeer = ({image, name, jname, brewery, location, style, ibu, abv, half, 
             }
         }
   `)
-  console.log(taw)
 
     let price = []
     if (stem) {

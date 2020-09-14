@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/infocard.scss";
 
 const InfoCard = ({info}) => {
-    console.log(info)
+    
     return (
         <div className="infocard">
             <div className="infocard-top">

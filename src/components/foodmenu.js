@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import "../styles/foodmenu.scss"
 
 const FoodMenu = ({menu}) => {
-    console.log(menu)
+    
     const data = useStaticQuery(graphql`
     query foodQuery {
         tastyPizza: file(relativePath: { eq: "tasty_pizza.jpg" }) {
