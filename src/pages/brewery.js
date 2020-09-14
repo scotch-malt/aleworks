@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useStaticQuery } from "gatsby"
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import SEO from "../components/seo"
 import "../styles/brewery.scss";
 
 const Brewery = () => {
@@ -15,6 +16,7 @@ const Brewery = () => {
   `)
     return (
         <Layout>
+            <SEO title={`Brewery`} />
             <div className="brewery">
                 <div className="brewery-main">
                     <Link to="/brewery#school" className="brewery-main-schoollink" role="button">Brewing School</Link>

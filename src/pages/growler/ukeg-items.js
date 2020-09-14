@@ -3,11 +3,13 @@ import { Link } from "gatsby"
 import Layout from "../../components/growlerlayout"
 import items1 from "../../images/growler/items/items1.jpg"
 import items2 from "../../images/growler/items/items2.jpg"
+import SEO from "../../components/seo"
 import "../../styles/ukeg-items.scss"
 
 const UkegItems = () => {
     return (
         <Layout>
+            <SEO title={`Ukeg 各部の名称`} />
             <div className="items">
                 <div className="items-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faPhoneSquare, faInfoCircle, faCompass } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import SEO from "../components/seo"
 import Img from "gatsby-image";
 import "../styles/taprooms.scss";
 
@@ -11,6 +12,7 @@ const Taprooms = ({data}) => {
     console.log(data)
     return (
         <Layout>
+            <SEO title={`タップルーム`} />
             <div className="taprooms">
                 <div className="taprooms-main">
                     <h1 className="taprooms-main-title">OUR TAPROOMS</h1>

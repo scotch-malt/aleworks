@@ -1,7 +1,7 @@
 {
   "name": "tokyoaleworks",
   "version": "1.0.0",
-  "description": "Official page of Tokyo Aleworks",
+  "description": "Official page of Tokyo Aleworks, the beer, the brewery, and the taprooms. トーキョーエールワークスのオフィシャルウェブサイトです。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,8 +36,10 @@
     "lodash": "^4.17.15",
     "netlify-cms-app": "^2.12.16",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "typeface-raleway": "0.0.75",
     "typeface-rubik": "0.0.72"
   }

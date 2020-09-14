@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/growlerlayout"
+import SEO from "../../components/seo"
 import "../../styles/ukeg-warranty.scss"
 
 const UkegWarranty = () => {
     return (
         <Layout>
+            <SEO title={`Ukeg 保証規定`} />
             <div className="warranty">
                 <div className="warranty-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

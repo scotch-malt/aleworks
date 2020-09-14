@@ -13,11 +13,13 @@ import maintenance9 from "../../images/growler/maintenance/maintenance9.jpg"
 import maintenance10 from "../../images/growler/maintenance/maintenance10.jpg"
 import maintenance11 from "../../images/growler/maintenance/maintenance11.jpg"
 import maintenance12 from "../../images/growler/maintenance/maintenance12.jpg"
+import SEO from "../../components/seo"
 import "../../styles/ukeg-maintenance.scss"
 
 const UkegMaintenance = () => {
     return (
         <Layout>
+            <SEO title={`Ukeg メンテナンス`} />
             <div className="maintenance">
                 <div className="maintenance-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

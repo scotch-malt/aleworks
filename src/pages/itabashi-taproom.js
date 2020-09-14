@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import InfoCard from "../components/infocard";
 import Taplist from "../components/taplist";
 import FoodMenu from "../components/foodmenu";
+import SEO from "../components/seo"
 import "../styles/itabashi-taproom.scss";
 
 const ItabashiTaproom = ({data}) => {
@@ -23,6 +24,7 @@ const ItabashiTaproom = ({data}) => {
 
     return (
        <Layout>
+         <SEO title={`板橋タップルーム`} />
            <div className="itabashi-taproom">
                <div className="itabashi-taproom-main">
                     <div className="itabashi-taproom-main-info">

@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import BeerCard from "../components/beercard";
+import SEO from "../components/seo"
 import "../styles/beers.scss";
 
 const Beers = ({data}) => {
@@ -16,6 +17,7 @@ const Beers = ({data}) => {
     
     return (
         <Layout>
+          <SEO title={`Beers`} />
             <div className="beers">
                 <div className="beers-main">
                     <h1 className="beers-main-title">OUR BEERS</h1>

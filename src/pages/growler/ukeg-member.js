@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/growlerlayout"
+import SEO from "../../components/seo"
 import "../../styles/ukeg-member.scss"
 
 const UkegMember = ({data}) => {
@@ -16,6 +17,7 @@ const UkegMember = ({data}) => {
     console.log(members)
     return (
         <Layout>
+          <SEO title={`Ukeg 加盟店情報`} />
             <div className="ukeg-member">
                 <div className="ukeg-member-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

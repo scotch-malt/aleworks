@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import NewsFeed from "../components/newsfeed";
+import SEO from "../components/seo"
 import Img from "gatsby-image";
 import "../styles/index.scss";
 import "typeface-rubik";
@@ -18,6 +19,7 @@ const Index = ({data}) => {
     
     return (
         <Layout>
+          <SEO title={`ホーム`} />
             <div className="index">
                 <div className="index-main">
                   <div className="index-main-image">

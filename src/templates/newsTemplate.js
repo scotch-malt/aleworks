@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import SEO from "../components/seo"
 import Img from "gatsby-image";
 import "../styles/news.scss";
 
@@ -9,6 +10,7 @@ const News = ({data}) => {
     
     return (
         <Layout>
+            <SEO title={news.frontmatter.title} />
             <div className="news">
                 <div className="news-main">
                     <div className="news-main-body">
