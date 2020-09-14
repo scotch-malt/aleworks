@@ -1,20 +1,23 @@
 ---
-title: "Sagarmatha"
-jtitle: サガルマータ ペールエール
-date: "2020-01-02"
-tags: ["beer", "pale ale", "american"]
-image: ../src/images/sagarmatha.jpg
-style: "American Pale Ale"
-abv: 6
-ibu: 35
-brewery: TOKYO ALEWORKS
-location: Tokyo, Japan
-half: 700
-pint: 1100
+pagetype: beer
 stem: false
-pagetype: "beer"
+brewery: TOKYO ALEWORKS
+jtitle: サガルマータ ペールエール
+date: 2020-01-02
+style: American Pale Ale
+half: 700
+abv: 6
+yurakucho: false
+location: Tokyo, Japan
+title: Sagarmatha
+tags:
+  - beer
+  - pale ale
+  - american
+image: ../src/images/sagarmatha.jpg
+ibu: 35
 itabashi: true
-yurakucho: true
+pint: 1100
 ---
 
 ネパール語で「エバレスト山」ごくごく飲めちゃう深みのペールエール。東京にあるクラフトビールとネパール料理の名店「ヒマラヤテーブル」の周年記念で開発したビールで人気が出すぎて定番決定！
