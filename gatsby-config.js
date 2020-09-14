@@ -1,4 +1,9 @@
 module.exports = {
+    siteMetadata: {
+        title: "Tokyo Aleworks",
+        description: "Official page of Tokyo Aleworks, the beer, the brewery, and the taprooms. トーキョーエールワークスのオフィシャルウェブサイトです。",
+        url: "https://tokyoaleworks.com"
+    },
     plugins: [
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
