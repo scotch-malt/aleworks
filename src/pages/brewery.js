@@ -1,10 +1,18 @@
 import React from "react";
-import { Link, withAssetPrefix } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import "../styles/brewery.scss";
 
 const Brewery = () => {
+    const data = useStaticQuery(graphql`
+    {
+        taikenLabel: file(relativePath: {eq: "taw_taiken_label.pdf"}) {
+            publicURL
+            name
+        }
+    }
+  `)
     return (
         <Layout>
             <div className="brewery">
@@ -86,7 +94,7 @@ const Brewery = () => {
                             <p>醸造体験時にラベルをお選びいただけます。
                             下記「ラベルサンプル一覧」にてデザインをご確認ください。
                             </p>
-                            <a href="https://tokyoaleworks.com/wp/wp-content/uploads/2019/12/Tokyo_Ale_Works_Label-data.pdf" target="_blank" rel="noopener noreferrer"><button type="button" style={{margin: "50px"}}>ラベルサンプル一覧</button></a>
+                            <a href={data.taikenLabel.publicURL} target="_blank" rel="noopener noreferrer"><button type="button" style={{margin: "50px"}} download>ラベルサンプル一覧</button></a>
                             <p style={{color: "red"}}>※オリジナルデータでの入稿も可能ですのでおたずね下さい</p>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験ビール納期 -</h2>
                             <p>醸造仕込み日から約5週間後に配送</p>
