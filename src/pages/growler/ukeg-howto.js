@@ -14,11 +14,13 @@ import howto10 from "../../images/growler/howto/howto10.jpg"
 import howto11 from "../../images/growler/howto/howto11.jpg"
 import howto12 from "../../images/growler/howto/howto12.jpg"
 import howto13 from "../../images/growler/howto/howto13.jpg"
+import SEO from "../../components/seo"
 import "..//../styles/ukeg-howto.scss"
 
 const UkegHowto = () => {
     return (
         <Layout>
+            <SEO title={`Ukegの使い方`} />
             <div className="howto">
                 <div className="howto-main">
                     <div className="howto-main-guide">

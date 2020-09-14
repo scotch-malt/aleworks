@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/growlerlayout"
 import GrowlerCard from "../../components/growlercard"
+import SEO from "../../components/seo"
 import Img from "gatsby-image"
 import "../../styles/ukeg-desc.scss"
 
@@ -9,6 +10,7 @@ const UkegDesc = ({data}) => {
     
     return (
         <Layout>
+          <SEO title={`Ukeg Description`} />
             <div className="ukeg-desc">
                 <div className="ukeg-desc-logo">
                     <Img fluid={data.logo.childImageSharp.fluid} style={{width: '100%', border: "1px solid transparent"}} />

@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/growlerlayout"
+import SEO from "../../components/seo"
 import "../../styles/ukeg-troubleshooting.scss"
 
 const UkegTroubleshooting = () => {
     return (
         <Layout>
+            <SEO title={`Ukeg よくあるご質問`} />
             <div className="troubleshooting">
                 <div className="troubleshooting-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

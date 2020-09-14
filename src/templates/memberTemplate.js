@@ -1,14 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/growlerlayout"
+import SEO from "../components/seo"
 import Img from "gatsby-image"
 import "../styles/member.scss"
 
 const Member = ({data}) => {
     const post = data.markdownRemark
-    console.log(post)
+    
     return (
         <Layout>
+            <SEO title={post.frontmatter.title} />
             <div className="member">
                 <div className="member-guide">
                     <Link to="/growler/ukeg-howto"><span className="ukeg-desc-guide-arrow">&#62;</span> UKEGの使い方</Link>

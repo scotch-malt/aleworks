@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import InfoCard from "../components/infocard";
 import Taplist from "../components/taplist";
 import FoodMenu from "../components/foodmenu";
+import SEO from "../components/seo"
 import "../styles/itabashi-taproom.scss";
 
 const YurakuchoTaproom = ({data}) => {
@@ -23,6 +24,7 @@ const YurakuchoTaproom = ({data}) => {
 
     return (
        <Layout taproom={info[0].node.frontmatter.title.split(" ")[0]}>
+         <SEO title={`有楽町タップルーム`} />
            <div className="itabashi-taproom">
                <div className="itabashi-taproom-main">
                     <div className="itabashi-taproom-main-info">
