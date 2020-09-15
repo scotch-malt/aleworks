@@ -1,5 +1,6 @@
 ---
 title: Itabashi Shop Information
+topic: shop info
 pagetype: info
 ---
 東京都板橋区板橋1-8-4

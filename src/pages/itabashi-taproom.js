@@ -21,7 +21,7 @@ const ItabashiTaproom = ({data}) => {
         info.push(edge)
       }
     })
-
+    
     return (
        <Layout>
          <SEO title={`板橋タップルーム`} />
@@ -64,7 +64,8 @@ query itabashiTaproomQuery {
         html 
         excerpt(pruneLength: 400)
         frontmatter {
-          title 
+          title
+          topic 
           date 
           tags
           image {

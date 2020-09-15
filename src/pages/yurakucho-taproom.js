@@ -21,7 +21,7 @@ const YurakuchoTaproom = ({data}) => {
         info.push(edge)
       }
     })
-
+    
     return (
        <Layout taproom={info[0].node.frontmatter.title.split(" ")[0]}>
          <SEO title={`有楽町タップルーム`} />
@@ -65,6 +65,7 @@ query yurakuchoTaproomQuery {
         excerpt(pruneLength: 400)
         frontmatter {
           title 
+          topic
           date 
           tags
           image {

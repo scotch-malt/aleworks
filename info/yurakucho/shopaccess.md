@@ -1,5 +1,6 @@
 ---
 title: Yurakucho Shop Access
+topic: shop access
 pagetype: info
 ---
 

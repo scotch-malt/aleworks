@@ -1,5 +1,6 @@
 ---
 title: Itabashi Shop Access
+topic: shop access
 pagetype: info
 ---
 

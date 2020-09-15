@@ -1,5 +1,6 @@
 ---
 title: Yurakucho Shop Information
+topic: shop info
 pagetype: info
 ---
 東京都千代田区有楽町2-9-7 JR東日本有楽町駅高架下 エキュートエディション有楽町
