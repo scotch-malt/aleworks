@@ -25,7 +25,7 @@ const YurakuchoTaproomHeader = () => {
                     <Img style={{width: "100%", overflow: "visible"}} fluid={data.file.childImageSharp.fluid} />
                   </div>
                 </Link>
-                <h1 className="taproomheader-contents-title">Yurakucho Taproom</h1>
+                <h1 className="taproomheader-contents-title">YURAKUCHO TAPROOM</h1>
                 <div className="taproomheader-contents-links">
                     <Link className="taproomheader-contents-links-link" to="/yurakucho-taproom#taplist">Taplist</Link>
                     <Link className="taproomheader-contents-links-link" to="/yurakucho-taproom#food">Food</Link>
