@@ -6,7 +6,7 @@ import "../styles/taproomheader.scss";
 const YurakuchoTaproomHeader = () => {
     const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "aleworks_logo_2018.png" }) {
+      file(relativePath: { eq: "tasty_nobg.png" }) {
         childImageSharp {
           # Specify a fluid image and fragment
           # The default maxWidth is 800 pixels
