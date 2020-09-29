@@ -1,5 +1,5 @@
 ---
-title: "The Hop Samurye IIPA"
+title: "The Hop SamuRye IIPA"
 jtitle: ザ・ホップさむライIIPA
 date: "2020-02-01"
 tags: ["beer", "ipa", "imperial", "rye"]

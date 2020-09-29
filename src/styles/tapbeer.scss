@@ -27,7 +27,7 @@
         background: white;
         color: black;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         &-origin {
             width: 15vw;
@@ -35,7 +35,7 @@
             font-size: 1.15vw;
         }
         &-details {
-            width: 15vw;
+            width: 30vw;
             text-align: center;
             font-size: 1vw;
         }

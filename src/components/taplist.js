@@ -37,10 +37,58 @@ const Taplist = ({taproom}) => {
                     }
                 }
             }
+            allYurakuchoBeer {
+                edges {
+                    node {
+                        abv
+                        category
+                        ibu
+                        name
+                        name_eng
+                    }
+                }
+            }
         }   
     
     `)
-    
+     const beerlist = []
+     data.allMarkdownRemark.edges.forEach((elem, i) => {
+         if (elem.node.frontmatter.pagetype === 'beer') {
+             beerlist.push(elem)
+         }
+     })
+
+     let ybeers = []
+     data.allYurakuchoBeer.edges.forEach((beer, i) => {
+         let pushed = false
+         for (i=0; i < beerlist.length; i++) {  
+             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+                 ybeers.push ({
+                     name_eng: beerlist[i].node.frontmatter.title,
+                     name: beerlist[i].node.frontmatter.jtitle,
+                     style: beerlist[i].node.frontmatter.style,
+                     abv: beerlist[i].node.frontmatter.abv,
+                     ibu: beerlist[i].node.frontmatter.ibu,
+                     image: beerlist[i].node.frontmatter.image
+                 })
+                 pushed = true
+                 break
+             } 
+         }
+         if (pushed === false) {
+            ybeers.push({
+                name_eng: beer.node.name_eng,
+                name: beer.node.name,
+                style: beer.node.category,
+                abv: beer.node.abv,
+                ibu: beer.node.ibu,
+                image: null
+            })
+         }  
+     })   
+
+     console.log(ybeers)
+
      let beers = []
      let itabashi_beers = []
      let yurakucho_beers = []
@@ -53,11 +101,12 @@ const Taplist = ({taproom}) => {
          }
      })
 
-     if (taproom === "itabashi") {
-        beers = itabashi_beers
-     } else {
-         beers = yurakucho_beers
-     }
+    //  if (taproom === "itabashi") {
+    //     beers = itabashi_beers
+    //  } else {
+    //      beers = ybeers
+    //  }
+    beers = ybeers
      
     return (
         <div className="taplist">
@@ -65,20 +114,14 @@ const Taplist = ({taproom}) => {
             {beers.map((beer, i) => {
                 return (
                     <TapBeer 
-                    key={i}
-                    image={beer.node.frontmatter.image}
-                    name={beer.node.frontmatter.title}
-                    jname={beer.node.frontmatter.jtitle}
-                    brewery={beer.node.frontmatter.brewery}
-                    location={beer.node.frontmatter.location}
-                    style={beer.node.frontmatter.style}
-                    ibu={beer.node.frontmatter.ibu}
-                    abv={beer.node.frontmatter.abv}
-                    half={beer.node.frontmatter.half}
-                    pint={beer.node.frontmatter.pint}
-                    stem={beer.node.frontmatter.stem}
-                    description={beer.node.html}
-                />
+                        key={i}
+                        image={beer.image}
+                        name={beer.name_eng}
+                        jname={beer.name}
+                        style={beer.style}
+                        ibu={beer.ibu}
+                        abv={beer.abv}
+                    />
                 )
             })}
 

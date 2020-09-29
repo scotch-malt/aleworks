@@ -1,6 +1,45 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const _ = require("lodash")
+const fetch = require('node-fetch')
+const crypto = require("crypto")
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`
+})
+
+console.log(process.env.API_KEY)
+
+const url = process.env.API_KEY
+
+exports.sourceNodes = async ({ actions }) => {
+  const { createNode } = actions
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+    json.forEach(beer => {
+        console.log(beer)
+        createNode({
+            id: beer.product_id,
+            name: beer.product_name,
+            name_eng: beer.product_name_eng,
+            category: beer.category_name,
+            abv: beer.alcohol,
+            ibu: beer.ibu,
+
+            internal: {
+                type: "YurakuchoBeer",
+                contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(beer))
+                .digest(`hex`),
+            },
+        })
+      })
+  } catch (error) {
+    console.log(error);
+  }
+  
+}
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
