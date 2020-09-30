@@ -12,14 +12,32 @@ const Brewery = () => {
             publicURL
             name
         }
+        allMarkdownRemark {
+            edges {
+                node {
+                    html
+                    frontmatter {
+                        title
+                        pagetype
+                    }
+                }
+            }
+        }
     }
   `)
+    const taiken = []
+    data.allMarkdownRemark.edges.forEach((item, i) => {
+        if (item.node.frontmatter.pagetype === "taiken") {
+            taiken.push(item)
+        }
+    })
+   console.log(taiken.length ? taiken: '')
     return (
         <Layout>
             <SEO title={`Brewery`} />
             <div className="brewery">
                 <div className="brewery-main">
-                    <Link to="/brewery#school" className="brewery-main-schoollink" role="button">Brewing School</Link>
+                    <Link to="/brewery#school" className="brewery-main-schoollink" role="button">体験醸造募集</Link>
                     <h1 className="brewery-main-title">OUR BREWERY</h1>
                     <div className="brewery-main-body">
                         <div className="brewery-main-body-description">
@@ -51,8 +69,10 @@ const Brewery = () => {
                         <br/>
                         <br/>
                         <div id="school" className="brewery-main-body-school">
-                            <h1 className="brewery-main-body-school-heading" >SCHOOL</h1> 
+                            <h1 className="brewery-main-body-school-heading" >SCHOOL</h1>
                             <hr/>
+                            <h2 className="brewery-main-body-school-heading" >{taiken[0].node.frontmatter.title}</h2> 
+                            <div dangerouslySetInnerHTML={{__html: taiken[0].node.html}} /> 
                             <p>TOKYO ALEWORKSでは、クラフトビールの醸造を体験できます！</p>
                             <p>先ずは、造りたいビールスタイルの日時のコースをお申込みください。当日は、TOKYO ALEWORKSのテクニカルスタッフが、あなたと一緒に美味しいクラフトビール造りをサポート致します。</p>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験中の服装 -</h2>
@@ -79,7 +99,6 @@ const Brewery = () => {
                             <h2 className="brewery-main-body-school-heading">- お申込み方法 -</h2>
                             <p>ネット予約のみとなっております。</p>
                             <p>予約受付外の期間は「受付停止」と表示されます。</p>
-                            <p>受付情報につきましては、NEWS、SNSも併せてご覧ください。</p>
                             <a href="https://airrsv.net/tokyoaleworks/calendar" target="_blank" rel="noopener noreferrer"><button type="button" style={{margin: "50px"}}>ご予約はこちら</button></a>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験参加人数 -</h2>
                             <p>１仕込み５名様までとさせていただきます。

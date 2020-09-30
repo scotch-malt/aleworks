@@ -12,7 +12,7 @@ import "typeface-raleway";
 const Index = ({data}) => {
     let news = [];
     data.allMarkdownRemark.edges.forEach((edge, i) => {
-      if(edge.node.frontmatter.pagetype === "news" && news.length < 3) {
+      if(edge.node.frontmatter.pagetype === "news" && news.length < 2) {
         news.push(edge)
       }
     })

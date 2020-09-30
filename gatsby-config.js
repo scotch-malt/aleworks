@@ -33,6 +33,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `taiken`,
+                path: `${__dirname}/taiken`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 name: `food`,
                 path: `${__dirname}/food`
             }
