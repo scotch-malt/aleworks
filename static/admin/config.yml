@@ -24,6 +24,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Itabashi Show", name: "itabashi", widget: "boolean"}
       - { label: "Yurakucho Show", name: "yurakucho", widget: "boolean"}
+  - name: "taiken"
+    label: "体験醸造"
+    folder: "taiken"
+    create: true
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "info-itabashi"
     label: "Info Itabashi"
     folder: "info/itabashi"
