@@ -12,8 +12,26 @@ const Brewery = () => {
             publicURL
             name
         }
+        allMarkdownRemark {
+            edges {
+                node {
+                    html
+                    frontmatter {
+                        title
+                        pagetype
+                    }
+                }
+            }
+        }
     }
   `)
+    const taiken = []
+    data.allMarkdownRemark.edges.forEach((item, i) => {
+        if (item.node.frontmatter.pagetype === "taiken") {
+            taiken.push(item)
+        }
+    })
+   console.log(taiken.length ? taiken: '')
     return (
         <Layout>
             <SEO title={`Brewery`} />
@@ -51,8 +69,10 @@ const Brewery = () => {
                         <br/>
                         <br/>
                         <div id="school" className="brewery-main-body-school">
-                            <h1 className="brewery-main-body-school-heading" >SCHOOL</h1> 
+                            <h1 className="brewery-main-body-school-heading" >SCHOOL</h1>
                             <hr/>
+                            <h2 className="brewery-main-body-school-heading" >{taiken[0].node.frontmatter.title}</h2> 
+                            <div dangerouslySetInnerHTML={{__html: taiken[0].node.html}} /> 
                             <p>TOKYO ALEWORKSでは、クラフトビールの醸造を体験できます！</p>
                             <p>先ずは、造りたいビールスタイルの日時のコースをお申込みください。当日は、TOKYO ALEWORKSのテクニカルスタッフが、あなたと一緒に美味しいクラフトビール造りをサポート致します。</p>
                             <h2 className="brewery-main-body-school-heading">- 醸造体験中の服装 -</h2>
