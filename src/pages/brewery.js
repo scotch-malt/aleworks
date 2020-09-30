@@ -19,6 +19,7 @@ const Brewery = () => {
                     frontmatter {
                         title
                         pagetype
+                        updated(formatString: "MMMM DD, YYYY")
                     }
                 }
             }
@@ -71,7 +72,8 @@ const Brewery = () => {
                         <div id="school" className="brewery-main-body-school">
                             <h1 className="brewery-main-body-school-heading" >SCHOOL</h1>
                             <hr/>
-                            <h2 className="brewery-main-body-school-heading" >{taiken[0].node.frontmatter.title}</h2> 
+                            <h2 className="brewery-main-body-school-heading" >{taiken[0].node.frontmatter.title}</h2>
+                            <small className="brewery-main-body-school-heading">Updated: {taiken[0].node.frontmatter.updated}</small> 
                             <div dangerouslySetInnerHTML={{__html: taiken[0].node.html}} /> 
                             <p>TOKYO ALEWORKSでは、クラフトビールの醸造を体験できます！</p>
                             <p>先ずは、造りたいビールスタイルの日時のコースをお申込みください。当日は、TOKYO ALEWORKSのテクニカルスタッフが、あなたと一緒に美味しいクラフトビール造りをサポート致します。</p>
