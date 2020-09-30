@@ -19,7 +19,7 @@ const Brewery = () => {
             <SEO title={`Brewery`} />
             <div className="brewery">
                 <div className="brewery-main">
-                    <Link to="/brewery#school" className="brewery-main-schoollink" role="button">Brewing School</Link>
+                    <Link to="/brewery#school" className="brewery-main-schoollink" role="button">体験醸造募集</Link>
                     <h1 className="brewery-main-title">OUR BREWERY</h1>
                     <div className="brewery-main-body">
                         <div className="brewery-main-body-description">
