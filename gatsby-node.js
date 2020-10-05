@@ -22,8 +22,8 @@ exports.sourceNodes = async ({ actions }) => {
         
         createNode({
             id: beer.product_id,
-            name: beer.product_name,
-            name_eng: beer.product_name_eng,
+            name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+            name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -49,7 +49,7 @@ exports.sourceNodes = async ({ actions }) => {
         createNode({
             id: beer.product_id,
             name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
-            name_eng: beer.product_name_eng.replace('<br>', ''),
+            name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -75,7 +75,7 @@ exports.sourceNodes = async ({ actions }) => {
         createNode({
             id: beer.product_id,
             name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
-            name_eng: beer.product_name_eng.replace('<br>', ''),
+            name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -101,7 +101,7 @@ exports.sourceNodes = async ({ actions }) => {
         createNode({
             id: beer.product_id,
             name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
-            name_eng: beer.product_name_eng.replace('<br>', ''),
+            name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -127,7 +127,7 @@ exports.sourceNodes = async ({ actions }) => {
         createNode({
             id: beer.product_id,
             name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
-            name_eng: beer.product_name_eng.replace('<br>', ''),
+            name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
