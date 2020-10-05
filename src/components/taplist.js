@@ -48,6 +48,50 @@ const Taplist = ({taproom}) => {
                     }
                 }
             }
+            allItabashiBeer1 {
+                edges {
+                    node {
+                        abv
+                        category
+                        ibu
+                        name
+                        name_eng
+                    }
+                }
+            }
+            allItabashiBeer2 {
+                edges {
+                    node {
+                        abv
+                        category
+                        ibu
+                        name
+                        name_eng
+                    }
+                }
+            }
+            allItabashiBeer3 {
+                edges {
+                    node {
+                        abv
+                        category
+                        ibu
+                        name
+                        name_eng
+                    }
+                }
+            }
+            allItabashiBeer4 {
+                edges {
+                    node {
+                        abv
+                        category
+                        ibu
+                        name
+                        name_eng
+                    }
+                }
+            }
         }   
     
     `)
@@ -87,26 +131,133 @@ const Taplist = ({taproom}) => {
          }  
      })   
 
-     console.log(ybeers)
+     let ibeers1 = []
+     data.allItabashiBeer1.edges.forEach((beer, i) => {
+         let pushed = false
+         for (i=0; i < beerlist.length; i++) {  
+             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+                 ibeers1.push ({
+                     name_eng: beerlist[i].node.frontmatter.title,
+                     name: beerlist[i].node.frontmatter.jtitle,
+                     style: beerlist[i].node.frontmatter.style,
+                     abv: beerlist[i].node.frontmatter.abv,
+                     ibu: beerlist[i].node.frontmatter.ibu,
+                     image: beerlist[i].node.frontmatter.image
+                 })
+                 pushed = true
+                 break
+             } 
+         }
+         if (pushed === false) {
+            ibeers1.push({
+                name_eng: beer.node.name_eng,
+                name: beer.node.name,
+                style: beer.node.category,
+                abv: beer.node.abv,
+                ibu: beer.node.ibu,
+                image: null
+            })
+         }  
+     }) 
 
-     let beers = []
-     let itabashi_beers = []
-     let yurakucho_beers = []
-     data.allMarkdownRemark.edges.forEach(item => {
-         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.itabashi === true) {
-             itabashi_beers.push(item)
+     let ibeers2 = []
+     data.allItabashiBeer2.edges.forEach((beer, i) => {
+         let pushed = false
+         for (i=0; i < beerlist.length; i++) {  
+             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+                 ibeers2.push ({
+                     name_eng: beerlist[i].node.frontmatter.title,
+                     name: beerlist[i].node.frontmatter.jtitle,
+                     style: beerlist[i].node.frontmatter.style,
+                     abv: beerlist[i].node.frontmatter.abv,
+                     ibu: beerlist[i].node.frontmatter.ibu,
+                     image: beerlist[i].node.frontmatter.image
+                 })
+                 pushed = true
+                 break
+             } 
          }
-         if (item.node.frontmatter.pagetype === "beer" && item.node.frontmatter.yurakucho === true) {
-             yurakucho_beers.push(item)
-         }
+         if (pushed === false) {
+            ibeers2.push({
+                name_eng: beer.node.name_eng,
+                name: beer.node.name,
+                style: beer.node.category,
+                abv: beer.node.abv,
+                ibu: beer.node.ibu,
+                image: null
+            })
+         }  
      })
 
-    //  if (taproom === "itabashi") {
-    //     beers = itabashi_beers
-    //  } else {
-    //      beers = ybeers
-    //  }
-    beers = ybeers
+     let ibeers3 = []
+     data.allItabashiBeer3.edges.forEach((beer, i) => {
+         let pushed = false
+         for (i=0; i < beerlist.length; i++) {  
+             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+                 ibeers3.push ({
+                     name_eng: beerlist[i].node.frontmatter.title,
+                     name: beerlist[i].node.frontmatter.jtitle,
+                     style: beerlist[i].node.frontmatter.style,
+                     abv: beerlist[i].node.frontmatter.abv,
+                     ibu: beerlist[i].node.frontmatter.ibu,
+                     image: beerlist[i].node.frontmatter.image
+                 })
+                 pushed = true
+                 break
+             } 
+         }
+         if (pushed === false) {
+            ibeers3.push({
+                name_eng: beer.node.name_eng,
+                name: beer.node.name,
+                style: beer.node.category,
+                abv: beer.node.abv,
+                ibu: beer.node.ibu,
+                image: null
+            })
+         }  
+     })
+
+     let ibeers4 = []
+     data.allItabashiBeer4.edges.forEach((beer, i) => {
+         let pushed = false
+         for (i=0; i < beerlist.length; i++) {  
+             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+                 ibeers4.push ({
+                     name_eng: beerlist[i].node.frontmatter.title,
+                     name: beerlist[i].node.frontmatter.jtitle,
+                     style: beerlist[i].node.frontmatter.style,
+                     abv: beerlist[i].node.frontmatter.abv,
+                     ibu: beerlist[i].node.frontmatter.ibu,
+                     image: beerlist[i].node.frontmatter.image
+                 })
+                 pushed = true
+                 break
+             } 
+         }
+         if (pushed === false) {
+            ibeers4.push({
+                name_eng: beer.node.name_eng,
+                name: beer.node.name,
+                style: beer.node.category,
+                abv: beer.node.abv,
+                ibu: beer.node.ibu,
+                image: null
+            })
+         }  
+     })
+     
+     let ibeers = [...ibeers1, ...ibeers2, ...ibeers3, ...ibeers4]
+
+     console.log(ibeers)
+
+     let beers = []
+
+     if (taproom === "itabashi") {
+        beers = ibeers
+     } else {
+         beers = ybeers
+     }
      
     return (
         <div className="taplist">

@@ -7,9 +7,13 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`
 })
 
-console.log(process.env.API_KEY)
+console.log(process.env.ITABASHI_API_KEY1)
 
 const url = process.env.API_KEY
+const url1 = process.env.ITABASHI_API_KEY1
+const url2 = process.env.ITABASHI_API_KEY2
+const url3 = process.env.ITABASHI_API_KEY3
+const url4 = process.env.ITABASHI_API_KEY4
 
 exports.sourceNodes = async ({ actions }) => {
   const { createNode } = actions
@@ -17,7 +21,7 @@ exports.sourceNodes = async ({ actions }) => {
     const response = await fetch(url);
     const json = await response.json();
     json.forEach(beer => {
-        console.log(beer)
+        
         createNode({
             id: beer.product_id,
             name: beer.product_name,
@@ -28,6 +32,110 @@ exports.sourceNodes = async ({ actions }) => {
 
             internal: {
                 type: "YurakuchoBeer",
+                contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(beer))
+                .digest(`hex`),
+            },
+        })
+      })
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const response = await fetch(url1);
+    const json = await response.json();
+    json.forEach(beer => {
+        
+        createNode({
+            id: beer.product_id,
+            name: beer.product_name,
+            name_eng: beer.product_name_eng,
+            category: beer.category_name,
+            abv: beer.alcohol,
+            ibu: beer.ibu,
+
+            internal: {
+                type: "Itabashi_Beer1",
+                contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(beer))
+                .digest(`hex`),
+            },
+        })
+      })
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const response = await fetch(url2);
+    const json = await response.json();
+    json.forEach(beer => {
+        
+        createNode({
+            id: beer.product_id,
+            name: beer.product_name,
+            name_eng: beer.product_name_eng,
+            category: beer.category_name,
+            abv: beer.alcohol,
+            ibu: beer.ibu,
+
+            internal: {
+                type: "Itabashi_Beer2",
+                contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(beer))
+                .digest(`hex`),
+            },
+        })
+      })
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const response = await fetch(url3);
+    const json = await response.json();
+    json.forEach(beer => {
+        
+        createNode({
+            id: beer.product_id,
+            name: beer.product_name,
+            name_eng: beer.product_name_eng,
+            category: beer.category_name,
+            abv: beer.alcohol,
+            ibu: beer.ibu,
+
+            internal: {
+                type: "Itabashi_Beer3",
+                contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(beer))
+                .digest(`hex`),
+            },
+        })
+      })
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const response = await fetch(url4);
+    const json = await response.json();
+    json.forEach(beer => {
+        
+        createNode({
+            id: beer.product_id,
+            name: beer.product_name,
+            name_eng: beer.product_name_eng,
+            category: beer.category_name,
+            abv: beer.alcohol,
+            ibu: beer.ibu,
+
+            internal: {
+                type: "Itabashi_Beer4",
                 contentDigest: crypto
                 .createHash(`md5`)
                 .update(JSON.stringify(beer))
