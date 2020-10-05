@@ -1,5 +1,5 @@
 ---
-title: "Yoyogi Lazy Hazy IPA"
+title: "Yoyogi Lazy Hazy NE IPA"
 jtitle: 代々木・レイジー・ヘイジーIPA
 date: "2020-04-02"
 tags: ["beer", "ipa", "neipa", "hazy"]

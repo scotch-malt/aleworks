@@ -36,20 +36,14 @@ const TapBeer = ({image, name, jname, brewery, location, style, ibu, abv, half, 
                     </div>
                 </div>
                 <div className="tapbeer-center">
-                    <div className="tapbeer-center-origin">
-                        <p>{brewery}</p>
-                        <p>{location}</p>
-                    </div>
                     <div className="tapbeer-center-details">
                         <p>Style: {style}</p>
                         <p>ABV: {abv}%</p>
                         <p>IBU: {ibu}</p>
-                        {price}
+                        {/* {price} */}
                     </div>   
                 </div>
-                <div className="tapbeer-bottom">
-                    <div dangerouslySetInnerHTML={{__html: description}} />
-                </div>
+               
             </div>
         </>
     );

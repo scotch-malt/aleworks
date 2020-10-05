@@ -1,5 +1,5 @@
 ---
-title: "Roppongi Hazy Nights DDH IIPA"
+title: "Roppongi Hazy Nights DDH DIPA"
 jtitle: 六本木・ヘイジー・ナイツ ダブルドライホップ・インペリアルIPA
 date: "2020-01-02"
 tags: ["beer", "double ipa", "imperial ipa", "neipa", "hazy"]

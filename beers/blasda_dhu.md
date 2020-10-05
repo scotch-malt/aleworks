@@ -6,9 +6,9 @@ jtitle: ブラスダ・デュー
 date: 2019-12-31
 style: Dry Stout
 half: 700
-abv: 5
+abv: 4
 location: Tokyo, Japan
-title: Blasda Dhu Dry Stout
+title: Blasda Dhu
 tags:
   - beer
   - stout
