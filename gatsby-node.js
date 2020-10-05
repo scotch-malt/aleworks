@@ -7,8 +7,6 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`
 })
 
-console.log(process.env.ITABASHI_API_KEY1)
-
 const url = process.env.API_KEY
 const url1 = process.env.ITABASHI_API_KEY1
 const url2 = process.env.ITABASHI_API_KEY2
@@ -50,8 +48,8 @@ exports.sourceNodes = async ({ actions }) => {
         
         createNode({
             id: beer.product_id,
-            name: beer.product_name,
-            name_eng: beer.product_name_eng,
+            name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+            name_eng: beer.product_name_eng.replace('<br>', ''),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -76,8 +74,8 @@ exports.sourceNodes = async ({ actions }) => {
         
         createNode({
             id: beer.product_id,
-            name: beer.product_name,
-            name_eng: beer.product_name_eng,
+            name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+            name_eng: beer.product_name_eng.replace('<br>', ''),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -99,11 +97,11 @@ exports.sourceNodes = async ({ actions }) => {
     const response = await fetch(url3);
     const json = await response.json();
     json.forEach(beer => {
-        
+        console.log(beer)
         createNode({
             id: beer.product_id,
-            name: beer.product_name,
-            name_eng: beer.product_name_eng,
+            name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+            name_eng: beer.product_name_eng.replace('<br>', ''),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
@@ -128,8 +126,8 @@ exports.sourceNodes = async ({ actions }) => {
         
         createNode({
             id: beer.product_id,
-            name: beer.product_name,
-            name_eng: beer.product_name_eng,
+            name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+            name_eng: beer.product_name_eng.replace('<br>', ''),
             category: beer.category_name,
             abv: beer.alcohol,
             ibu: beer.ibu,
