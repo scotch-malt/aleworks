@@ -97,7 +97,7 @@ exports.sourceNodes = async ({ actions }) => {
     const response = await fetch(url3);
     const json = await response.json();
     json.forEach(beer => {
-        console.log(beer)
+        
         createNode({
             id: beer.product_id,
             name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
