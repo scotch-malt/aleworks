@@ -14,7 +14,6 @@ const UkegMember = ({data}) => {
         }
     })
 
-    console.log(members)
     return (
         <Layout>
           <SEO title={`Ukeg 加盟店情報`} />
