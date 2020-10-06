@@ -249,8 +249,6 @@ const Taplist = ({taproom}) => {
      
      let ibeers = [...ibeers1, ...ibeers2, ...ibeers3, ...ibeers4]
 
-     console.log(ibeers)
-
      let beers = []
 
      if (taproom === "itabashi") {
