@@ -24,7 +24,7 @@ const NewsFeed = ({news})=> {
         }
     }
     `)
-    console.log(taw)
+    
     return (
         <div>
             {news.map((item, i) => {
