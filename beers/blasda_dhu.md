@@ -8,7 +8,7 @@ style: Dry Stout
 half: 700
 abv: 4
 location: Tokyo, Japan
-title: Blasda Dhu
+title: Blasda Dhu Dry Stout
 tags:
   - beer
   - stout
