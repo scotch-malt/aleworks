@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faPhoneSquare, faInfoCircle, faCompass } from "@fortawesome/free-solid-svg-icons"
+import { faPhoneSquare, faInfoCircle, faCompass, faMotorcycle } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import SEO from "../components/seo"
@@ -27,6 +27,11 @@ const Taprooms = ({data}) => {
                             </div>
                             <h2 className="taprooms-main-body-card-title">ITABASHI TAPROOM (板橋店)</h2>
                             <div className="taprooms-main-body-card-links">
+                                <a href="https://www.ubereats.com/tokyo/food-delivery/%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC-%E3%82%A8%E3%83%BC%E3%83%AB%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9-%E3%82%BF%E3%83%83%E3%83%95%E3%83%AB%E3%83%BC%E3%83%A0-tokyo-aleworks-taproom/nxoXAC4YRs6Qyq9yozxuaw" target="_blank" rel="noreferrer noopener">
+                                    <button>
+                                        <FontAwesomeIcon icon={faMotorcycle} size="2x" /><span>Delivery (UberEats)</span>
+                                    </button>
+                                </a>
                                 <Link to="/itabashi-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
                                 <a href="tel:03-3961-1196"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x" /><span>03-3961-1196</span></button></a>
                                 <a href="https://goo.gl/maps/4Uzo1R5V1f1MNndD9" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
@@ -42,6 +47,11 @@ const Taprooms = ({data}) => {
                             </div>
                             <h2 className="taprooms-main-body-card-title">YURAKUCHO TAPROOM (有楽町店)</h2>
                             <div className="taprooms-main-body-card-links">
+                                <a href="https://www.ubereats.com/tokyo/food-delivery/tokyo-aleworks-station-taproom-yurakucho/ks6_WfieROGHZQITYq0qsg" target="_blank" rel="noreferrer noopener">
+                                    <button>
+                                        <FontAwesomeIcon icon={faMotorcycle} size="2x" /><span>Delivery (UberEats)</span>
+                                    </button>
+                                </a>
                                 <Link to="/yurakucho-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
                                 <a href="tel:03-5843-2787"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x"/><span>03-5843-2787</span></button></a>
                                 <a href="https://goo.gl/maps/2nmV1MEjfLv2s4Lj6" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
