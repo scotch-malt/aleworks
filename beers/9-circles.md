@@ -13,16 +13,18 @@ tags:
   - beer
   - red ale
 image: ../src/images/9_circles_small.png
-ibu: 25
+ibu: 33
 itabashi: true
 yurakucho: true
 pint: 1100
 --- 
 
-東京名所シリーズの秋葉原編。今回は豪華にアマゾン熱帯雨林盆地のペルー産カカオを使用しています。芳醇なミルクココアをイメージで、甘すぎないダークチョコレートとリッチな牛乳の風味のビール。そういうのがご趣味なら秋葉原のメイド喫茶店でのみたくなる味。。。飲みやすいミルクスタウト。
+Deep red, full of malty goodness, and backed up with copious amounts of cascade and centennial hop aroma, this beer will take you through many circles of flavor. Originally made as a collaboration with our good friends at Titans in Otsuka, North Tokyo.
 
-スタイル：ミルクスタウト
+深い赤茶色でダークフルーツとモルティー感にカスケードとセンテンイアルホップの柑橘の風味でこのビールは色んなフレイバーを実現できています。元々は北東京の大塚駅近辺のビール名店：タイタンズとのコラボビール。
 
-アルコール度数：8.5％
+スタイル：レッドエール
 
-IBU値：35
+アルコール度数：9.0％
+
+IBU値：33
