@@ -91,7 +91,7 @@ const Brewery = () => {
                             <p style={{color: "red"}}>※上記よりお選びいただけます</p>
                             <p>ご予約の際にご選択ください</p>
                             <h2 className="brewery-main-body-school-heading">- お申込み料金 -</h2>
-                            <p><strong>【2020年体験醸造価格】</strong></p>
+                            <p><strong>【2021年体験醸造価格】</strong></p>
                             <p>330mlボトル／約48本</p>
                             <p>金額 49,800円（税込）</p>
                             <p style={{color: "red"}}>※発送をご希望の場合、別途送料が掛かります。</p>
