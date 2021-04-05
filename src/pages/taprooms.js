@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faPhoneSquare, faInfoCircle, faCompass, faMotorcycle } from "@fortawesome/free-solid-svg-icons"
+import { faPhoneSquare, faInfoCircle, faCompass, faMotorcycle, faUsers } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import SEO from "../components/seo"
@@ -34,7 +34,7 @@ const Taprooms = ({data}) => {
                                 </a>
                                 <Link to="/itabashi-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
                                 <a href="tel:03-3961-1196"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x" /><span>03-3961-1196</span></button></a>
-                                <a href="https://goo.gl/maps/4Uzo1R5V1f1MNndD9" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
+                                <a href="https://en-gage.net/tokyoaleworks_jobs/" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faUsers} size="2x"/><span>求人情報</span></button></a>
                             </div>
                         </div>
                         <div className="taprooms-main-body-card">
@@ -54,7 +54,7 @@ const Taprooms = ({data}) => {
                                 </a>
                                 <Link to="/yurakucho-taproom"><button><FontAwesomeIcon icon={faInfoCircle} size="2x" /><span>店舗情報</span></button></Link>
                                 <a href="tel:03-5843-2787"><button><FontAwesomeIcon icon={faPhoneSquare} size="2x"/><span>03-5843-2787</span></button></a>
-                                <a href="https://goo.gl/maps/2nmV1MEjfLv2s4Lj6" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faCompass} size="2x"/><span>マップ</span></button></a>
+                                <a href="https://en-gage.net/tokyoaleworks_jobs/" target="_blank" rel="noopener noreferrer"><button><FontAwesomeIcon icon={faUsers} size="2x"/><span>求人情報</span></button></a>
                             </div>
                         </div>
 
