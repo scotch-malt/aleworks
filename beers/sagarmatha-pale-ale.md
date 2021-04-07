@@ -9,7 +9,7 @@ half: 700
 abv: 6
 yurakucho: false
 location: Tokyo, Japan
-title: Sagarmatha
+title: Sagarmatha Pale Ale
 tags:
   - beer
   - pale ale
