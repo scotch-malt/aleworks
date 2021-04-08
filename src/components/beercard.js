@@ -10,12 +10,12 @@ const BeerCard = ({beer}) => {
             <Img fluid={beer.node.frontmatter.image.childImageSharp.fluid} alt={beer.node.frontmatter.title} style={{overflow: "visible", width: "100%"}} />
             </div>
             <div className="beercard-heading">
-                <h2 className="beercard-heading-title">{beer.node.frontmatter.title}</h2>
-                <h3 className="beercard-heading-jtitle">{beer.node.frontmatter.jtitle}</h3>
+                <h3 className="beercard-heading-title">{beer.node.frontmatter.title}</h3>
+                <h4 className="beercard-heading-jtitle">{beer.node.frontmatter.jtitle}</h4>
             </div>
-            <hr/>
+            {/* <hr/>
             <div className="beercard-description" dangerouslySetInnerHTML={{__html: beer.node.html}} />
-            <hr/>
+            <hr/> */}
         </div>
     );
 }
