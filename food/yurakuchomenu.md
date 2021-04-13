@@ -123,7 +123,7 @@ pagetype: food
 当店自慢のモルトチキンウィングス。<br>
 
 **SELECT SAUCE & WHISKY**<br>
-- サイズ1つにつき選べるソースは1種類でございます。
+サイズ1つにつき選べるソースは1種類でございます。
 - ☆Spicy & WOLFBURN Northland　スパイシー& ウルフバーンノースランド
 - Mild & TALISKER 10YO　マイルドBBQ & タリスカー10年
 - Honey Mustard & GLENMORANGIE ORIGINAL　ハニーマスタード& グレンモーレンジィ オリジナル
