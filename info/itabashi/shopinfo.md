@@ -14,7 +14,7 @@ pagetype: info
 
 ラストオーダー
 　Food　閉店1h前
-　Drink　閉店30min前
+　Drink　閉店1h前
 
 定休日　月曜日
 ※月曜日が祝日の場合、火曜日が店休となります。

@@ -12,7 +12,7 @@ pagetype: info
 
 ラストオーダー
 　Food　閉店1h前
-　Drink　閉店30min前
+　Drink　閉店1h前
 
 
 TEL　03-5843-2787
