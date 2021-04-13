@@ -41,12 +41,7 @@ const FoodMenu = ({menu}) => {
     return (
         <div className="foodmenu">
             <h1 className="foodmenu-title">Food</h1>
-            <div className="foodmenu-image">
-                <Img 
-                    fluid={data.tastyPizza.childImageSharp.fluid} 
-                    style={{width: "100%"}}
-                />
-            </div>
+
             <div className="foodmenu-main">
                 <div className="foodmenu-main-list">
                    <div dangerouslySetInnerHTML={{__html: food[0].node.html}} />

@@ -40,10 +40,12 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Type", name: "pagetype", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "food-yurakucho"
-    label: "Food Yurakucho"
+  - name: "food-taproom"
+    label: "Food Taproom"
     folder: "food"
     create: true
     fields: 
+      - { label: "Title", name: "title", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }
+
 
