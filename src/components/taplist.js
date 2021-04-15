@@ -76,61 +76,7 @@ const Taplist = ({taproom}) => {
                     }
                 }
             }
-            allYurakuchoBeer {
-                edges {
-                    node {
-                        abv
-                        category
-                        ibu
-                        name
-                        name_eng
-                    }
-                }
-            }
-            allItabashiBeer1 {
-                edges {
-                    node {
-                        abv
-                        category
-                        ibu
-                        name
-                        name_eng
-                    }
-                }
-            }
-            allItabashiBeer2 {
-                edges {
-                    node {
-                        abv
-                        category
-                        ibu
-                        name
-                        name_eng
-                    }
-                }
-            }
-            allItabashiBeer3 {
-                edges {
-                    node {
-                        abv
-                        category
-                        ibu
-                        name
-                        name_eng
-                    }
-                }
-            }
-            allItabashiBeer4 {
-                edges {
-                    node {
-                        abv
-                        category
-                        ibu
-                        name
-                        name_eng
-                    }
-                }
-            }
+            
         }   
     
     `)
