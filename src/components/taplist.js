@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import TapBeer from "../components/tapbeer";
 import "../styles/taplist.scss";
 
 const Taplist = ({taproom}) => {
+
+    const [yurakuchoBeers, setYurakuchoBeers] = useState([]);
+    const [itabashiBeers1, setItabashiBeers1] = useState([]);
+    const [itabashiBeers2, setItabashiBeers2] = useState([]);
+    const [itabashiBeers3, setItabashiBeers3] = useState([]);
+    const [itabashiBeers4, setItabashiBeers4] = useState([]);
+
+    useEffect(() => {
+        const getYurakuchoTaplist = async () => {
+            const response = await fetch("/.netlify/functions/getYurakuchoBeer");
+            const data = await response.json();
+            setYurakuchoBeers(data);
+        }
+        const getItabashiTaplist1 = async () => {
+            const response = await fetch("/.netlify/functions/getItabashiBeers1");
+            const data = await response.json();
+            setItabashiBeers1(data);
+        }
+        const getItabashiTaplist2 = async () => {
+            const response = await fetch("/.netlify/functions/getItabashiBeers2");
+            const data = await response.json();
+            setItabashiBeers2(data);
+        }
+        const getItabashiTaplist3 = async () => {
+            const response = await fetch("/.netlify/functions/getItabashiBeers3");
+            const data = await response.json();
+            setItabashiBeers3(data);
+        }
+        const getItabashiTaplist4 = async () => {
+            const response = await fetch("/.netlify/functions/getItabashiBeers4");
+            const data = await response.json();
+            setItabashiBeers4(data);
+        }
+        getYurakuchoTaplist();
+        getItabashiTaplist1();
+        getItabashiTaplist2();
+        getItabashiTaplist3();
+        getItabashiTaplist4();
+    }, [])
     
     const data = useStaticQuery(graphql`
         query taplistQuery {
@@ -103,10 +142,10 @@ const Taplist = ({taproom}) => {
      })
 
      let ybeers = []
-     data.allYurakuchoBeer.edges.forEach((beer, i) => {
+     yurakuchoBeers.length && yurakuchoBeers.forEach((beer, i) => {
          let pushed = false
          for (i=0; i < beerlist.length; i++) {  
-             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+             if (beer.product_name_eng === beerlist[i].node.frontmatter.title ) {
                  ybeers.push ({
                      name_eng: beerlist[i].node.frontmatter.title,
                      name: beerlist[i].node.frontmatter.jtitle,
@@ -121,21 +160,21 @@ const Taplist = ({taproom}) => {
          }
          if (pushed === false) {
             ybeers.push({
-                name_eng: beer.node.name_eng,
-                name: beer.node.name,
-                style: beer.node.category,
-                abv: beer.node.abv,
-                ibu: beer.node.ibu,
+                name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
+                name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+                style: beer.category_name,
+                abv: beer.alchohol,
+                ibu: beer.ibu,
                 image: null
             })
          }  
      })   
 
      let ibeers1 = []
-     data.allItabashiBeer1.edges.forEach((beer, i) => {
+     itabashiBeers1.length && itabashiBeers1.forEach((beer, i) => {
          let pushed = false
          for (i=0; i < beerlist.length; i++) {  
-             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+             if (beer.product_name_eng === beerlist[i].node.frontmatter.title ) {
                  ibeers1.push ({
                      name_eng: beerlist[i].node.frontmatter.title,
                      name: beerlist[i].node.frontmatter.jtitle,
@@ -150,21 +189,21 @@ const Taplist = ({taproom}) => {
          }
          if (pushed === false) {
             ibeers1.push({
-                name_eng: beer.node.name_eng,
-                name: beer.node.name,
-                style: beer.node.category,
-                abv: beer.node.abv,
-                ibu: beer.node.ibu,
+                name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
+                name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+                style: beer.category_name,
+                abv: beer.alcohol,
+                ibu: beer.ibu,
                 image: null
             })
          }  
      }) 
 
      let ibeers2 = []
-     data.allItabashiBeer2.edges.forEach((beer, i) => {
+     itabashiBeers2.length && itabashiBeers2.forEach((beer, i) => {
          let pushed = false
          for (i=0; i < beerlist.length; i++) {  
-             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+             if (beer.product_name_eng === beerlist[i].node.frontmatter.title ) {
                  ibeers2.push ({
                      name_eng: beerlist[i].node.frontmatter.title,
                      name: beerlist[i].node.frontmatter.jtitle,
@@ -179,21 +218,21 @@ const Taplist = ({taproom}) => {
          }
          if (pushed === false) {
             ibeers2.push({
-                name_eng: beer.node.name_eng,
-                name: beer.node.name,
-                style: beer.node.category,
-                abv: beer.node.abv,
-                ibu: beer.node.ibu,
+                name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
+                name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+                style: beer.category_name,
+                abv: beer.alcohol,
+                ibu: beer.ibu,
                 image: null
             })
          }  
      })
 
      let ibeers3 = []
-     data.allItabashiBeer3.edges.forEach((beer, i) => {
+     itabashiBeers3.length && itabashiBeers3.forEach((beer, i) => {
          let pushed = false
          for (i=0; i < beerlist.length; i++) {  
-             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+             if (beer.product_name_eng === beerlist[i].node.frontmatter.title ) {
                  ibeers3.push ({
                      name_eng: beerlist[i].node.frontmatter.title,
                      name: beerlist[i].node.frontmatter.jtitle,
@@ -208,21 +247,21 @@ const Taplist = ({taproom}) => {
          }
          if (pushed === false) {
             ibeers3.push({
-                name_eng: beer.node.name_eng,
-                name: beer.node.name,
-                style: beer.node.category,
-                abv: beer.node.abv,
-                ibu: beer.node.ibu,
+                name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
+                name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+                style: beer.category_name,
+                abv: beer.alcohol,
+                ibu: beer.ibu,
                 image: null
             })
          }  
      })
 
      let ibeers4 = []
-     data.allItabashiBeer4.edges.forEach((beer, i) => {
+     itabashiBeers4.length && itabashiBeers4.forEach((beer, i) => {
          let pushed = false
          for (i=0; i < beerlist.length; i++) {  
-             if (beer.node.name_eng === beerlist[i].node.frontmatter.title ) {
+             if (beer.product_name_eng === beerlist[i].node.frontmatter.title ) {
                  ibeers4.push ({
                      name_eng: beerlist[i].node.frontmatter.title,
                      name: beerlist[i].node.frontmatter.jtitle,
@@ -237,11 +276,11 @@ const Taplist = ({taproom}) => {
          }
          if (pushed === false) {
             ibeers4.push({
-                name_eng: beer.node.name_eng,
-                name: beer.node.name,
-                style: beer.node.category,
-                abv: beer.node.abv,
-                ibu: beer.node.ibu,
+                name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
+                name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
+                style: beer.category_name,
+                abv: beer.alcohol,
+                ibu: beer.ibu,
                 image: null
             })
          }  

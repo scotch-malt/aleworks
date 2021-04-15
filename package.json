@@ -4,6 +4,7 @@
   "description": "Official page of Tokyo Aleworks, the beer, the brewery, and the taprooms. トーキョーエールワークスのオフィシャルウェブサイトです。",
   "main": "index.js",
   "scripts": {
+    "start": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
