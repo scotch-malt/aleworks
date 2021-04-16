@@ -109,7 +109,7 @@ const Taplist = ({taproom}) => {
                 name_eng: beer.product_name_eng.replace('<br>', '').replace(/\s\s+/g, ' ').replace(':', ': '),
                 name: beer.product_name.replace('<br>', '').replace(/[\s]+/g, ''),
                 style: beer.category_name,
-                abv: beer.alchohol,
+                abv: beer.alcohol,
                 ibu: beer.ibu,
                 image: null
             })
