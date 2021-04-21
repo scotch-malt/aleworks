@@ -8,7 +8,7 @@ style: IPA
 half: 700
 abv: 7.0
 location: Tokyo, Japan
-title: Haze is Dead?
+title: Haze is Dead ?IPA
 tags:
   - beer
   - IPA
