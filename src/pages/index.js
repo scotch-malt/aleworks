@@ -34,7 +34,7 @@ const Index = ({data}) => {
                     <NewsFeed news={news} />
                     <div className="index-main-card-links">
                       <a href="https://www.saketry.com/tokyoaleworks.html" target="_blank" rel="noopener noreferrer"><button>BUY ONLINE</button></a>
-                      <Link to="/growler/ukeg-desc"><button>GET A GROWLER</button></Link>   
+                      <Link to="/growler/ukeg"><button>GET A GROWLER</button></Link>   
                     </div>
                   </div>   
                 </div>
